@@ -1,0 +1,163 @@
+ogc_fid:
+  type: serial primary key
+  human: object ID
+geoid:
+  type: text
+  human: FIPS code
+sourceagent:
+  type: text
+  human: Source Agent
+parcelnumb:
+  type: text
+  human: Parcel ID/Parcel Number
+  examples:
+    - "02004940."
+usecode:
+  type: text
+  human: Parcel Use Code
+usedesc:
+  type: text
+  human: Parcel Use Description
+struct:
+  type: boolean
+  human: Structure On Parcel
+multistruct:
+  type: boolean
+  human: Multiple Structures on Parcel
+structno:
+  type: integer
+  human: Number of Structures on Parcel
+yearbuilt:
+  type: integer
+  human: Structure Year Built
+numstories:
+  type: double precision
+  human: Number of Stories
+numunits:
+  type: integer
+  human: Number of Units
+structstyle:
+  type: text
+  human: Structure Style
+parvaltype:
+  type: text
+  human: Parcel Value Type
+  description: The type of value reported in the parcel value fields
+  examples:
+    # Taken from https://services.nconemap.gov/secure/rest/services/NC1Map_Parcels/MapServer/1/query?where=&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=&returnGeometry=true&returnTrueCurves=false&maxAllowableOffset=&geometryPrecision=&outSR=&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=parvaltype&outStatistics=%5B%0D%0A%7B%0D%0A++++++++%22statisticType%22%3A+%22count%22%2C%0D%0A++++++++%22onStatisticField%22%3A+%22parvaltype%22%2C%0D%0A++++++++%22outStatisticFieldName%22%3A+%22status_count%22%0D%0A++++%7D%0D%0A%5D%0D%0A&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&resultOffset=&resultRecordCount=&f=html
+    - 'Appraised'
+    - 'Assessed'
+    - 'Taxable'
+    - 'Market'
+    - 'Market Value'
+improvval:
+  type: double precision
+  human: Improvement Value
+landval:
+  type: double precision
+  human: Land Value
+parval:
+  type: double precision
+  human: Total Parcel Value
+agval:
+  type: double precision
+  human: Agricultural Value
+saleprice:
+  type: double precision
+  human: Last Sale Price
+saledate:
+  type: date
+  human: Last Sale Date
+taxamt:
+  type: double precision
+  human: Annual Tax Bill
+owntype:
+  type: text
+  human: Owner Type
+owner:
+  type: text
+  human: Owner Name
+ownfrst:
+  type: text
+  human: Owner First Name
+ownlast:
+  type: text
+  human: Owner Last Name
+subsurfown:
+  type: text
+  human: Subsurface Owner
+subowntype:
+  type: text
+  human: Subsurface Owner Type
+mailadd:
+  type: text
+  human: Owner Mailing Address
+address:
+  type: text
+  human: Site Address
+saddno:
+  type: text
+  human: Site Address Number
+saddpref:
+  type: text
+  human: Side Address Prefix
+saddstr:
+  type: text
+  human: Site Address Street Name
+saddsttyp:
+  type: text
+  human: Site Address Street Type
+saddstsuf:
+  type: text
+  human: Site Address Street Suffix
+sunit:
+  type: text
+  human: Site Address Unit
+scity:
+  type: text
+  human: Site Address City
+city:
+  type: text
+  human: Census City
+county:
+  type: text
+  human: Site Address County
+state2:
+  type: text
+  human: Site Address State
+szip:
+  type: text
+  human: Site Address Zip Code
+legaldesc:
+  type: text
+  human: Legal Description
+subdivision:
+  type: text
+  human: Subdivision
+sourceref:
+  type: text
+  human: Source Document Reference
+sourcedate:
+  type: date
+  human: Source Document Date
+sourceurl:
+  type: text
+  human: Source URL
+recrdareatx:
+  type: text
+  human: Recorded Area (text)
+recrdareano:
+  type: double precision
+  human: Recorded Area (number)
+gisacre:
+  type: double precision
+  human: GIS Acres
+reviseddate:
+  type: date
+  human: Date of Last Revision
+path:
+  type: text
+  human: Loveland unique, human-readable ID for this parcel.
+  examples:
+    - /us/mi/wayne/detroit/123
+    - /us/fl/456
