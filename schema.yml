@@ -1,163 +1,526 @@
 ogc_fid:
   type: serial primary key
   human: object ID
+  categories: 
+    - core
 geoid:
   type: text
   human: FIPS code
+  categories: 
+    - core
 sourceagent:
   type: text
   human: Source Agent
+  categories: 
+    - core
 parcelnumb:
   type: text
-  human: Parcel ID/Parcel Number
+  human: Parcel ID
   examples:
-    - "02004940."
+    mi_detroit: "02004940."
+  categories: 
+    - assessor_data
+    - core
 usecode:
   type: text
   human: Parcel Use Code
+  categories: 
+    - assessor_data
 usedesc:
   type: text
   human: Parcel Use Description
+  categories: 
+    - assessor_data
+zoning:
+  type: text
+  human: Zoning Code
+  categories: 
+    - assessor_data
+zoning_description:
+  type: text
+  human: Zoning Description
+  categories: 
+    - assessor_data
 struct:
   type: boolean
   human: Structure On Parcel
+  categories: 
+    - assessor_data
 multistruct:
   type: boolean
   human: Multiple Structures on Parcel
+  categories: 
+    - assessor_data
 structno:
   type: integer
   human: Number of Structures on Parcel
+  categories: 
+    - assessor_data
 yearbuilt:
   type: integer
   human: Structure Year Built
+  categories: 
+    - assessor_data
 numstories:
   type: double precision
   human: Number of Stories
+  categories: 
+    - assessor_data
 numunits:
   type: integer
   human: Number of Units
+  categories: 
+    - assessor_data
 structstyle:
   type: text
   human: Structure Style
+  categories: 
+    - assessor_data
 parvaltype:
   type: text
   human: Parcel Value Type
   description: The type of value reported in the parcel value fields
   examples:
     # Taken from https://services.nconemap.gov/secure/rest/services/NC1Map_Parcels/MapServer/1/query?where=&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=&returnGeometry=true&returnTrueCurves=false&maxAllowableOffset=&geometryPrecision=&outSR=&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=parvaltype&outStatistics=%5B%0D%0A%7B%0D%0A++++++++%22statisticType%22%3A+%22count%22%2C%0D%0A++++++++%22onStatisticField%22%3A+%22parvaltype%22%2C%0D%0A++++++++%22outStatisticFieldName%22%3A+%22status_count%22%0D%0A++++%7D%0D%0A%5D%0D%0A&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&resultOffset=&resultRecordCount=&f=html
-    - 'Appraised'
-    - 'Assessed'
-    - 'Taxable'
-    - 'Market'
-    - 'Market Value'
+    nc: ['Appraised', 'Assessed', 'Taxable', 'Market', 'Market Value']
+  categories: 
+    - assessor_data
 improvval:
   type: double precision
   human: Improvement Value
+  categories: 
+    - assessor_data
 landval:
   type: double precision
   human: Land Value
+  categories: 
+    - assessor_data
 parval:
   type: double precision
   human: Total Parcel Value
+  categories: 
+    - assessor_data
 agval:
   type: double precision
   human: Agricultural Value
+  categories: 
+    - assessor_data
 saleprice:
   type: double precision
   human: Last Sale Price
+  categories: 
+    - assessor_data
 saledate:
   type: date
   human: Last Sale Date
+  categories: 
+    - assessor_data
 taxamt:
   type: double precision
   human: Annual Tax Bill
+  categories: 
+    - assessor_data
 owntype:
   type: text
   human: Owner Type
+  categories: 
+    - assessor_data
 owner:
   type: text
   human: Owner Name
+  categories: 
+    - assessor_data
+    - owner_address
 ownfrst:
   type: text
   human: Owner First Name
+  categories: 
+    - assessor_data
+    - owner_address
 ownlast:
   type: text
   human: Owner Last Name
+  categories: 
+    - assessor_data
+    - owner_address
+owner2:
+  type: text
+  human: Second Owner Name
+  categories: 
+    - assessor_data
+owner3:
+  type: text
+  human: Third Owner Name
+  categories: 
+    - assessor_data
+owner4:
+  type: text
+  human: Fourth Owner Name
+  categories: 
+    - assessor_data
 subsurfown:
   type: text
   human: Subsurface Owner
+  categories: 
+    - assessor_data
 subowntype:
   type: text
   human: Subsurface Owner Type
+  categories: 
+    - assessor_data
 mailadd:
   type: text
   human: Owner Mailing Address
+  categories: 
+    - owner_address
+mail_address2:
+  type: text
+  human: Owner Mailing Address Second Line
+  categories: 
+    - owner_address
+careof:
+  type: text
+  human: Owner Mailing Address Care Of
+  categories: 
+    - owner_address
+mail_addno:
+  type: text
+  human: Owner Mailing Address Street Number
+  categories: 
+    - owner_address
+mail_addpref:
+  type: text
+  human: Owner Mailing Address Street Prefix
+  categories: 
+    - owner_address
+mail_addstr:
+  type: text
+  human: Owner Mailing Address Street Name
+  categories: 
+    - owner_address
+mail_addsttyp:
+  type: text
+  human: Owner Mailing Address Street Type
+  categories: 
+    - owner_address
+mail_addstsuf:
+  type: text
+  human: Owner Mailing Address Street Suffix
+  categories: 
+    - owner_address
+mail_unit:
+  type: text
+  human: Owner Mailing Address Unit Number
+  categories: 
+    - owner_address
+mail_city:
+  type: text
+  human: Owner Mailing Address City
+  categories: 
+    - owner_address
+mail_state2:
+  type: text
+  human: Owner Mailing Address State
+  categories: 
+    - owner_address
+mail_zip:
+  type: text
+  human: Mailing address ZIP Code
+  categories: 
+    - owner_address
+mail_urbanization:
+  type: text
+  human: Mailing Address Urbanizacion (Puerto Rico)
+  categories: 
+    - owner_address
 address:
   type: text
   human: Site Address
+  categories: 
+    - situs_address
+address2:
+  type: text
+  human: Site Address Second Line
+  categories: 
+    - situs_address
 saddno:
   type: text
   human: Site Address Number
+  categories: 
+    - situs_address
 saddpref:
   type: text
-  human: Side Address Prefix
+  human: Site Address Prefix
+  categories: 
+    - situs_address
 saddstr:
   type: text
   human: Site Address Street Name
 saddsttyp:
   type: text
   human: Site Address Street Type
+  categories: 
+    - situs_address
 saddstsuf:
   type: text
   human: Site Address Street Suffix
+  categories: 
+    - situs_address
 sunit:
   type: text
   human: Site Address Unit
+  categories: 
+    - situs_address
 scity:
   type: text
   human: Site Address City
+  categories: 
+    - situs_address
+original_address:
+  type: text
+  human: Original Address
+  description: Address fields as originally provided by the county, separated by a semicolon and a space
+  categories: 
+    - situs_address
 city:
   type: text
   human: Census City
+  categories: 
+    - core
 county:
   type: text
   human: Site Address County
+  categories: 
+    - situs_address
 state2:
   type: text
   human: Site Address State
+  categories: 
+    - situs_address
 szip:
   type: text
   human: Site Address Zip Code
+  categories: 
+    - situs_address
+urbanization:
+  type: text
+  human: Site Urbanizacion
+  description: A postal address field commonly used in Puerto Rico
+  categories: 
+    - situs_address
+location_name:
+  type: text
+  human: Location Name
+  description: A name commonly associated with this parcel
+  categories: 
+    - situs_address
+address_source:
+  type: text
+  human: Primary Address Source
+  default: "'county'"
+  categories: 
+    - situs_address
 legaldesc:
   type: text
   human: Legal Description
+  categories: 
+    - assessor_data
+plat:
+  type: text
+  human: Plat
+  categories: 
+    - assessor_data
+book:
+  type: text
+  human: Book
+  categories: 
+    - assessor_data
+page:
+  type: text
+  human: Page
+  categories: 
+    - assessor_data
+block:
+  type: text
+  human: Block
+  categories: 
+    - assessor_data
+lot:
+  type: text
+  human: Lot
+  categories: 
+    - assessor_data
+neighborhood:
+  type: text
+  human: Neighborhood
+  categories: 
+    - assessor_data
 subdivision:
   type: text
   human: Subdivision
+  categories: 
+    - assessor_data
+qoz:
+  type: text
+  human: Federal Qualified Opportunity Zone
+  categories: 
+    - assessor_data
+qoz_tract:
+  type: text
+  human: Qualified Opportunity Zone 2018 Census Tract Number
+  categories: 
+    - assessor_data
+census_tract:
+  type: text
+  human: Census 2010 Tract
+  categories: 
+    - census
+census_block:
+  type: text
+  human: Census 2010 Block
+  categories: 
+    - census
+census_blockgroup:
+  type: text
+  human: Census 2010 Blockgroup
+  categories: 
+    - census
 sourceref:
   type: text
   human: Source Document Reference
+  categories: 
+    - core
 sourcedate:
   type: date
   human: Source Document Date
+  categories: 
+    - core
 sourceurl:
   type: text
   human: Source URL
+  categories: 
+    - core
 recrdareatx:
   type: text
   human: Recorded Area (text)
+  categories: 
+    - assessor_data
 recrdareano:
   type: double precision
   human: Recorded Area (number)
+  categories: 
+    - assessor_data
 gisacre:
   type: double precision
-  human: GIS Acres
+  human: Acres
+  categories: 
+    - assessor_data
+sqft:
+  type: double precision
+  human: Parcel Square Feet
+  categories: 
+    - assessor_data
 reviseddate:
   type: date
   human: Date of Last Revision
+  categories: 
+    - core
 path:
   type: text
-  human: Loveland unique, human-readable ID for this parcel.
+  human: Parcel Path
+  description: A human-readable identifier for this parcel. Set automatically by Loveland.
+  categories: 
+    - core
+ll_stable_id:
+  type: text
+  human: Stable ID
+  description: Does this parcel have a stable ogc_fid from the last update?
+  categories: 
+    - core
   examples:
-    - /us/mi/wayne/detroit/123
-    - /us/fl/456
+    - preserved (if unchanged)
+ll_uuid:
+  type: UUID
+  default: uuid_generate_v4()
+  human: Version 4 UUID
+  description: Uniquely identifies a single parcel
+  categories: 
+    - core
+ll_updated_at:
+  type: timestamp with time zone
+  default: now()
+  human: Updated At
+  description: Timestamp of last update of any kind to this row
+  categories: 
+    - core
+dpv_status:
+  type: text
+  human: USPS Delivery Point Validation
+  description: USPS delivery point validation status code
+  categories: 
+    - usps
+dpv_codes:
+  type: text
+  human: Delivery Point Validation Codes
+  categories: 
+    - usps
+dpv_notes:
+  type: text
+  human: Delivery Point Validation Notes
+  categories: 
+    - usps
+dpv_type:
+  type: text
+  human: Delivery Point Match Type
+  categories: 
+    - usps
+cass_errorno:
+  type: text
+  human: CASS Certification Error Codes
+  categories: 
+    - usps
+rdi:
+  type: text
+  human: Residential Delivery Indicator
+  categories: 
+    - usps
+usps_vacancy:
+  type: text
+  human: USPS Vacancy Indicator
+  categories: 
+    - usps
+usps_vacancy_date:
+  type: date
+  human: USPS Vacancy Indicator Date
+  categories: 
+    - usps
+lbcs_activity:
+  type: numeric
+  human: LBCS Activity Code
+  description: Actual use of land, eg farming, shopping, manufacturing. See https://www.planning.org/lbcs/standards/
+  categories: 
+    - lbcs
+lbcs_function:
+  type: numeric
+  human: LBCS Function Code
+  description: Economic function or type of establishment, eg agricultural, commercial, industrial. See https://www.planning.org/lbcs/standards/
+  categories: 
+    - lbcs
+lbcs_structure:
+  type: numeric
+  human: LBCS Structure Code
+  description: Type of structure or building, eg single-family house, office building, warehouse. See https://www.planning.org/lbcs/standards/
+  categories: 
+    - lbcs
+lbcs_site:
+  type: numeric
+  human: LBCS Site Code
+  description: What is on the land. See https://www.planning.org/lbcs/standards/
+  categories: 
+    - lbcs
+lbcs_ownership:
+  type: numeric
+  human: LBCS Ownership Code
+  description: Ownership structure, eg public, private. See https://www.planning.org/lbcs/standards/
+  categories: 
+    - lbcs
