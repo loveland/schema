@@ -1,6 +1,6 @@
 require 'yaml'
 schema = YAML.load_file('schema.yml')
-
+# puts "#{schema}"
 # Update the sql
 statements = []
 statements << "create table loveland (\n  "
@@ -15,6 +15,7 @@ docs << '| Field | Type | Examples | Description |'
 docs << '| ----- | ---- | -------- | ----------- |'
 
 schema.map do |s, v|
+  puts s
   puts v
   examples = v['examples'].join(', ') if v['examples']
   docs << "| `#{s}` | `#{v['type']}` | #{examples} | #{v['human']} |"

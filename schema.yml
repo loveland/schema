@@ -17,7 +17,7 @@ parcelnumb:
   type: text
   human: Parcel ID
   examples:
-    mi_detroit: "02004940."
+    - mi_detroit: "02004940."
   categories: 
     - assessor_data
     - core
@@ -82,7 +82,7 @@ parvaltype:
   description: The type of value reported in the parcel value fields
   examples:
     # Taken from https://services.nconemap.gov/secure/rest/services/NC1Map_Parcels/MapServer/1/query?where=&text=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&spatialRel=esriSpatialRelIntersects&relationParam=&outFields=&returnGeometry=true&returnTrueCurves=false&maxAllowableOffset=&geometryPrecision=&outSR=&returnIdsOnly=false&returnCountOnly=false&orderByFields=&groupByFieldsForStatistics=parvaltype&outStatistics=%5B%0D%0A%7B%0D%0A++++++++%22statisticType%22%3A+%22count%22%2C%0D%0A++++++++%22onStatisticField%22%3A+%22parvaltype%22%2C%0D%0A++++++++%22outStatisticFieldName%22%3A+%22status_count%22%0D%0A++++%7D%0D%0A%5D%0D%0A&returnZ=false&returnM=false&gdbVersion=&returnDistinctValues=false&resultOffset=&resultRecordCount=&f=html
-    nc: ['Appraised', 'Assessed', 'Taxable', 'Market', 'Market Value']
+    - nc: ['Appraised', 'Assessed', 'Taxable', 'Market', 'Market Value']
   categories: 
     - assessor_data
 improvval:
