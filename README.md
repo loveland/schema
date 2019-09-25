@@ -9,7 +9,7 @@ Version 1.0
 | `ogc_fid` | `serial primary key` |  | object ID |
 | `geoid` | `text` |  | FIPS code |
 | `sourceagent` | `text` |  | Source Agent |
-| `parcelnumb` | `text` | {"mi_detroit"=>"02004940."} | Parcel ID |
+| `parcelnumb` | `text` | 02004940, 001-020-4624-001 | Parcel ID |
 | `usecode` | `text` |  | Parcel Use Code |
 | `usedesc` | `text` |  | Parcel Use Description |
 | `zoning` | `text` |  | Zoning Code |
@@ -21,7 +21,7 @@ Version 1.0
 | `numstories` | `double precision` |  | Number of Stories |
 | `numunits` | `integer` |  | Number of Units |
 | `structstyle` | `text` |  | Structure Style |
-| `parvaltype` | `text` | {"nc"=>["Appraised", "Assessed", "Taxable", "Market", "Market Value"]} | Parcel Value Type |
+| `parvaltype` | `text` | Appraised, Assessed, Taxable, Market, Market Value | Parcel Value Type |
 | `improvval` | `double precision` |  | Improvement Value |
 | `landval` | `double precision` |  | Land Value |
 | `parval` | `double precision` |  | Total Parcel Value |
