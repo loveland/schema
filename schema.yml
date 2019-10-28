@@ -417,14 +417,38 @@ recrdareano:
     - assessor_data
 gisacre:
   type: double precision
-  human: Acres
+  human: County-provided Acres
   categories: 
     - assessor_data
 sqft:
   type: double precision
-  human: Parcel Square Feet
+  human: County-provided Parcel Square Feet
   categories: 
     - assessor_data
+ll_gisacre:
+  type: double precision
+  human: Loveland Calculated Parcel Acres
+  categories: 
+    - assessor_data
+    - calculated
+ll_gissqft:
+  type: integer
+  human: Loveland Calculated Parcel Square Feet
+  categories: 
+    - assessor_data
+    - calculated
+ll_bldg_footprint_sqft:
+  type: integer
+  human: Loveland Calculated Building Footprint Square Feet
+  categories: 
+    - assessor_data
+    - calculated
+ll_bldg_count:
+  type: integer
+  human: Loveland Calculated Building Count
+  categories: 
+    - assessor_data
+    - calculated
 reviseddate:
   type: date
   human: Date of Last Revision
