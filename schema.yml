@@ -441,14 +441,16 @@ ll_bldg_footprint_sqft:
   type: integer
   human: Loveland Calculated Building Footprint Square Feet
   categories: 
-    - assessor_data
     - calculated
+    - bldg
+    - premium
 ll_bldg_count:
   type: integer
   human: Loveland Calculated Building Count
   categories: 
-    - assessor_data
     - calculated
+    - bldg
+    - premium
 reviseddate:
   type: date
   human: Date of Last Revision
@@ -488,41 +490,49 @@ dpv_status:
   description: USPS delivery point validation status code
   categories: 
     - usps
+    - premium
 dpv_codes:
   type: text
   human: Delivery Point Validation Codes
   categories: 
     - usps
+    - premium
 dpv_notes:
   type: text
   human: Delivery Point Validation Notes
   categories: 
     - usps
+    - premium
 dpv_type:
   type: text
   human: Delivery Point Match Type
   categories: 
     - usps
+    - premium
 cass_errorno:
   type: text
   human: CASS Certification Error Codes
   categories: 
     - usps
+    - premium
 rdi:
   type: text
   human: Residential Delivery Indicator
   categories: 
     - usps
+    - premium
 usps_vacancy:
   type: text
   human: USPS Vacancy Indicator
   categories: 
     - usps
+    - premium
 usps_vacancy_date:
   type: date
   human: USPS Vacancy Indicator Date
   categories: 
     - usps
+    - premium
 lbcs_activity:
   type: numeric
   human: LBCS Activity Code
