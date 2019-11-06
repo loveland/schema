@@ -230,7 +230,7 @@ mail_state2:
     - owner_address
 mail_zip:
   type: text
-  human: Mailing address ZIP Code
+  human: Owner Mailing Address ZIP Code
   categories: 
     - owner_address
 mail_urbanization:
@@ -417,12 +417,12 @@ recrdareano:
     - assessor_data
 gisacre:
   type: double precision
-  human: County-provided Acres
+  human: County-Provided Acres
   categories: 
     - assessor_data
 sqft:
   type: double precision
-  human: County-provided Parcel Square Feet
+  human: County-Provided Parcel Square Feet
   categories: 
     - assessor_data
 ll_gisacre:
