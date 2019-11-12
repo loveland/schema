@@ -261,6 +261,8 @@ saddpref:
 saddstr:
   type: text
   human: Site Address Street Name
+  categories: 
+    - situs_address
 saddsttyp:
   type: text
   human: Site Address Street Type
