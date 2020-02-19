@@ -1,6 +1,6 @@
 # Loveland Parcel Data Schema
 
-Version 1.0
+Version 4.0
 
 ## Schema
 
