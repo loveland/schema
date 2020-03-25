@@ -434,7 +434,7 @@ ll_gisacre:
     - assessor_data
     - calculated
 ll_gissqft:
-  type: integer
+  type: bigint
   human: Loveland Calculated Parcel Square Feet
   categories: 
     - assessor_data
