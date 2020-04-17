@@ -9,3 +9,11 @@
 * Added a number of columns to match v3
 * Added support for column categories
 * Added `qoz` and `qoz_tract` to support US Federal Opportunity Zones (these are two that bump the schema version to v4)
+
+### 5.0: 29 January 2020
+
+* Added in ll_gissqft, ll_bldg_footprint_sqft, ll_bldg_count
+
+### 6.0: 17 April 2020
+
+* Added in text discription for LBCS columns

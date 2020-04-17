@@ -538,12 +538,24 @@ usps_vacancy_date:
 lbcs_activity:
   type: numeric
   human: LBCS Activity Code
-  description: Actual use of land, eg farming, shopping, manufacturing. See https://www.planning.org/lbcs/standards/
+  description: Actual activity on land, eg farming, shopping, manufacturing. See https://www.planning.org/lbcs/standards/
+  categories: 
+    - lbcs
+lbcs_activity_desc:
+  type: text
+  human: LBCS Activity Code text description
+  description: Actual activity on land, eg farming, shopping, manufacturing. See https://www.planning.org/lbcs/standards/
   categories: 
     - lbcs
 lbcs_function:
   type: numeric
   human: LBCS Function Code
+  description: Economic function or type of establishment, eg agricultural, commercial, industrial. See https://www.planning.org/lbcs/standards/
+  categories: 
+    - lbcs
+lbcs_function_desc:
+  type: text
+  human: LBCS Function Code text description
   description: Economic function or type of establishment, eg agricultural, commercial, industrial. See https://www.planning.org/lbcs/standards/
   categories: 
     - lbcs
@@ -553,15 +565,33 @@ lbcs_structure:
   description: Type of structure or building, eg single-family house, office building, warehouse. See https://www.planning.org/lbcs/standards/
   categories: 
     - lbcs
+lbcs_structure_desc:
+  type: text
+  human: LBCS Structure Code text description
+  description: Type of structure or building, eg single-family house, office building, warehouse. See https://www.planning.org/lbcs/standards/
+  categories: 
+    - lbcs
 lbcs_site:
   type: numeric
   human: LBCS Site Code
   description: What is on the land. See https://www.planning.org/lbcs/standards/
   categories: 
     - lbcs
+lbcs_site_desc:
+  type: text
+  human: LBCS Site Code text description
+  description: What is on the land. See https://www.planning.org/lbcs/standards/
+  categories: 
+    - lbcs
 lbcs_ownership:
   type: numeric
   human: LBCS Ownership Code
+  description: Ownership structure, eg public, private. See https://www.planning.org/lbcs/standards/
+  categories: 
+    - lbcs
+lbcs_ownership_desc:
+  type: text
+  human: LBCS Ownership Code text description
   description: Ownership structure, eg public, private. See https://www.planning.org/lbcs/standards/
   categories: 
     - lbcs

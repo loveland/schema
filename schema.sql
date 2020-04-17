@@ -81,6 +81,10 @@ create table loveland (
   recrdareano double precision,
   gisacre double precision,
   sqft double precision,
+  ll_gisacre double precision,
+  ll_gissqft bigint,
+  ll_bldg_footprint_sqft integer,
+  ll_bldg_count integer,
   reviseddate date,
   path text,
   ll_stable_id text,
@@ -95,8 +99,13 @@ create table loveland (
   usps_vacancy text,
   usps_vacancy_date date,
   lbcs_activity numeric,
+  lbcs_activity_desc text,
   lbcs_function numeric,
+  lbcs_function_desc text,
   lbcs_structure numeric,
+  lbcs_structure_desc text,
   lbcs_site numeric,
-  lbcs_ownership numeric
+  lbcs_site_desc text,
+  lbcs_ownership numeric,
+  lbcs_ownership_desc text
 );

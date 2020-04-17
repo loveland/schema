@@ -49,7 +49,7 @@ Version 4.0
 | `mail_unit` | `text` |  | Owner Mailing Address Unit Number |
 | `mail_city` | `text` |  | Owner Mailing Address City |
 | `mail_state2` | `text` |  | Owner Mailing Address State |
-| `mail_zip` | `text` |  | Mailing address ZIP Code |
+| `mail_zip` | `text` |  | Owner Mailing Address ZIP Code |
 | `mail_urbanization` | `text` |  | Mailing Address Urbanizacion (Puerto Rico) |
 | `address` | `text` |  | Site Address |
 | `address2` | `text` |  | Site Address Second Line |
@@ -86,8 +86,12 @@ Version 4.0
 | `sourceurl` | `text` |  | Source URL |
 | `recrdareatx` | `text` |  | Recorded Area (text) |
 | `recrdareano` | `double precision` |  | Recorded Area (number) |
-| `gisacre` | `double precision` |  | Acres |
-| `sqft` | `double precision` |  | Parcel Square Feet |
+| `gisacre` | `double precision` |  | County-Provided Acres |
+| `sqft` | `double precision` |  | County-Provided Parcel Square Feet |
+| `ll_gisacre` | `double precision` |  | Loveland Calculated Parcel Acres |
+| `ll_gissqft` | `bigint` |  | Loveland Calculated Parcel Square Feet |
+| `ll_bldg_footprint_sqft` | `integer` |  | Loveland Calculated Building Footprint Square Feet |
+| `ll_bldg_count` | `integer` |  | Loveland Calculated Building Count |
 | `reviseddate` | `date` |  | Date of Last Revision |
 | `path` | `text` |  | Parcel Path |
 | `ll_stable_id` | `text` | preserved (if unchanged) | Stable ID |
@@ -102,10 +106,15 @@ Version 4.0
 | `usps_vacancy` | `text` |  | USPS Vacancy Indicator |
 | `usps_vacancy_date` | `date` |  | USPS Vacancy Indicator Date |
 | `lbcs_activity` | `numeric` |  | LBCS Activity Code |
+| `lbcs_activity_desc` | `text` |  | LBCS Activity Code text description |
 | `lbcs_function` | `numeric` |  | LBCS Function Code |
+| `lbcs_function_desc` | `text` |  | LBCS Function Code text description |
 | `lbcs_structure` | `numeric` |  | LBCS Structure Code |
+| `lbcs_structure_desc` | `text` |  | LBCS Structure Code text description |
 | `lbcs_site` | `numeric` |  | LBCS Site Code |
+| `lbcs_site_desc` | `text` |  | LBCS Site Code text description |
 | `lbcs_ownership` | `numeric` |  | LBCS Ownership Code |
+| `lbcs_ownership_desc` | `text` |  | LBCS Ownership Code text description |
 
 ## To update
 
