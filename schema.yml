@@ -157,40 +157,40 @@ owntype:
 owner:
   type: text
   human: Owner Name
-  tier: standard
+  tier: basic
   categories: 
     - assessor_data
     - owner_address
 ownfrst:
   type: text
   human: Owner First Name
-  tier: standard
+  tier: basic
   categories: 
     - assessor_data
     - owner_address
 ownlast:
   type: text
   human: Owner Last Name
-  tier: standard
+  tier: basic
   categories: 
     - assessor_data
     - owner_address
 owner2:
   type: text
   human: Second Owner Name
-  tier: standard
+  tier: basic
   categories: 
     - assessor_data
 owner3:
   type: text
   human: Third Owner Name
-  tier: standard
+  tier: basic
   categories: 
     - assessor_data
 owner4:
   type: text
   human: Fourth Owner Name
-  tier: standard
+  tier: basic
   categories: 
     - assessor_data
 subsurfown:
@@ -470,19 +470,19 @@ census_blockgroup:
 sourceref:
   type: text
   human: Source Document Reference
-  tier: standard
+  tier: basic
   categories: 
     - core
 sourcedate:
   type: date
   human: Source Document Date
-  tier: standard
+  tier: basic
   categories: 
     - core
 sourceurl:
   type: text
   human: Source URL
-  tier: standard
+  tier: basic
   categories: 
     - core
 recrdareatx:
@@ -542,7 +542,7 @@ ll_bldg_count:
 reviseddate:
   type: date
   human: Date of Last Revision
-  tier: standard
+  tier: basic
   categories: 
     - core
 path:
