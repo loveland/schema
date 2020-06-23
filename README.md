@@ -4,117 +4,117 @@ Version 4.0
 
 ## Schema
 
-| Field | Type | Examples | Description |
-| ----- | ---- | -------- | ----------- |
-| `ogc_fid` | `serial primary key` |  | object ID |
-| `geoid` | `text` |  | FIPS code |
-| `sourceagent` | `text` |  | Source Agent |
-| `parcelnumb` | `text` | 02004940, 001-020-4624-001 | Parcel ID |
-| `usecode` | `text` |  | Parcel Use Code |
-| `usedesc` | `text` |  | Parcel Use Description |
-| `zoning` | `text` |  | Zoning Code |
-| `zoning_description` | `text` |  | Zoning Description |
-| `struct` | `boolean` |  | Structure On Parcel |
-| `multistruct` | `boolean` |  | Multiple Structures on Parcel |
-| `structno` | `integer` |  | Number of Structures on Parcel |
-| `yearbuilt` | `integer` |  | Structure Year Built |
-| `numstories` | `double precision` |  | Number of Stories |
-| `numunits` | `integer` |  | Number of Units |
-| `structstyle` | `text` |  | Structure Style |
-| `parvaltype` | `text` | Appraised, Assessed, Taxable, Market, Market Value | Parcel Value Type |
-| `improvval` | `double precision` |  | Improvement Value |
-| `landval` | `double precision` |  | Land Value |
-| `parval` | `double precision` |  | Total Parcel Value |
-| `agval` | `double precision` |  | Agricultural Value |
-| `saleprice` | `double precision` |  | Last Sale Price |
-| `saledate` | `date` |  | Last Sale Date |
-| `taxamt` | `double precision` |  | Annual Tax Bill |
-| `owntype` | `text` |  | Owner Type |
-| `owner` | `text` |  | Owner Name |
-| `ownfrst` | `text` |  | Owner First Name |
-| `ownlast` | `text` |  | Owner Last Name |
-| `owner2` | `text` |  | Second Owner Name |
-| `owner3` | `text` |  | Third Owner Name |
-| `owner4` | `text` |  | Fourth Owner Name |
-| `subsurfown` | `text` |  | Subsurface Owner |
-| `subowntype` | `text` |  | Subsurface Owner Type |
-| `mailadd` | `text` |  | Owner Mailing Address |
-| `mail_address2` | `text` |  | Owner Mailing Address Second Line |
-| `careof` | `text` |  | Owner Mailing Address Care Of |
-| `mail_addno` | `text` |  | Owner Mailing Address Street Number |
-| `mail_addpref` | `text` |  | Owner Mailing Address Street Prefix |
-| `mail_addstr` | `text` |  | Owner Mailing Address Street Name |
-| `mail_addsttyp` | `text` |  | Owner Mailing Address Street Type |
-| `mail_addstsuf` | `text` |  | Owner Mailing Address Street Suffix |
-| `mail_unit` | `text` |  | Owner Mailing Address Unit Number |
-| `mail_city` | `text` |  | Owner Mailing Address City |
-| `mail_state2` | `text` |  | Owner Mailing Address State |
-| `mail_zip` | `text` |  | Owner Mailing Address ZIP Code |
-| `mail_urbanization` | `text` |  | Mailing Address Urbanizacion (Puerto Rico) |
-| `address` | `text` |  | Site Address |
-| `address2` | `text` |  | Site Address Second Line |
-| `saddno` | `text` |  | Site Address Number |
-| `saddpref` | `text` |  | Site Address Prefix |
-| `saddstr` | `text` |  | Site Address Street Name |
-| `saddsttyp` | `text` |  | Site Address Street Type |
-| `saddstsuf` | `text` |  | Site Address Street Suffix |
-| `sunit` | `text` |  | Site Address Unit |
-| `scity` | `text` |  | Site Address City |
-| `original_address` | `text` |  | Original Address |
-| `city` | `text` |  | Census City |
-| `county` | `text` |  | Site Address County |
-| `state2` | `text` |  | Site Address State |
-| `szip` | `text` |  | Site Address Zip Code |
-| `urbanization` | `text` |  | Site Urbanizacion |
-| `location_name` | `text` |  | Location Name |
-| `address_source` | `text` |  | Primary Address Source |
-| `legaldesc` | `text` |  | Legal Description |
-| `plat` | `text` |  | Plat |
-| `book` | `text` |  | Book |
-| `page` | `text` |  | Page |
-| `block` | `text` |  | Block |
-| `lot` | `text` |  | Lot |
-| `neighborhood` | `text` |  | Neighborhood |
-| `subdivision` | `text` |  | Subdivision |
-| `qoz` | `text` |  | Federal Qualified Opportunity Zone |
-| `qoz_tract` | `text` |  | Qualified Opportunity Zone 2018 Census Tract Number |
-| `census_tract` | `text` |  | Census 2010 Tract |
-| `census_block` | `text` |  | Census 2010 Block |
-| `census_blockgroup` | `text` |  | Census 2010 Blockgroup |
-| `sourceref` | `text` |  | Source Document Reference |
-| `sourcedate` | `date` |  | Source Document Date |
-| `sourceurl` | `text` |  | Source URL |
-| `recrdareatx` | `text` |  | Recorded Area (text) |
-| `recrdareano` | `double precision` |  | Recorded Area (number) |
-| `gisacre` | `double precision` |  | County-Provided Acres |
-| `sqft` | `double precision` |  | County-Provided Parcel Square Feet |
-| `ll_gisacre` | `double precision` |  | Loveland Calculated Parcel Acres |
-| `ll_gissqft` | `bigint` |  | Loveland Calculated Parcel Square Feet |
-| `ll_bldg_footprint_sqft` | `integer` |  | Loveland Calculated Building Footprint Square Feet |
-| `ll_bldg_count` | `integer` |  | Loveland Calculated Building Count |
-| `reviseddate` | `date` |  | Date of Last Revision |
-| `path` | `text` |  | Parcel Path |
-| `ll_stable_id` | `text` | preserved (if unchanged) | Stable ID |
-| `ll_uuid` | `UUID` |  | Version 4 UUID |
-| `ll_updated_at` | `timestamp with time zone` |  | Updated At |
-| `dpv_status` | `text` |  | USPS Delivery Point Validation |
-| `dpv_codes` | `text` |  | Delivery Point Validation Codes |
-| `dpv_notes` | `text` |  | Delivery Point Validation Notes |
-| `dpv_type` | `text` |  | Delivery Point Match Type |
-| `cass_errorno` | `text` |  | CASS Certification Error Codes |
-| `rdi` | `text` |  | Residential Delivery Indicator |
-| `usps_vacancy` | `text` |  | USPS Vacancy Indicator |
-| `usps_vacancy_date` | `date` |  | USPS Vacancy Indicator Date |
-| `lbcs_activity` | `numeric` |  | LBCS Activity Code |
-| `lbcs_activity_desc` | `text` |  | LBCS Activity Code text description |
-| `lbcs_function` | `numeric` |  | LBCS Function Code |
-| `lbcs_function_desc` | `text` |  | LBCS Function Code text description |
-| `lbcs_structure` | `numeric` |  | LBCS Structure Code |
-| `lbcs_structure_desc` | `text` |  | LBCS Structure Code text description |
-| `lbcs_site` | `numeric` |  | LBCS Site Code |
-| `lbcs_site_desc` | `text` |  | LBCS Site Code text description |
-| `lbcs_ownership` | `numeric` |  | LBCS Ownership Code |
-| `lbcs_ownership_desc` | `text` |  | LBCS Ownership Code text description |
+| Field | Tier | Type | Examples | Description |
+| ----- | ---- | ---- | -------- | ----------- |
+| `ogc_fid` | basic | `serial primary key` |  | object ID |
+| `geoid` | basic | `text` |  | FIPS code |
+| `sourceagent` | basic | `text` |  | Source Agent |
+| `parcelnumb` | basic | `text` | 02004940, 001-020-4624-001 | Parcel ID |
+| `usecode` | standard | `text` |  | Parcel Use Code |
+| `usedesc` | standard | `text` |  | Parcel Use Description |
+| `zoning` | standard | `text` |  | Zoning Code |
+| `zoning_description` | standard | `text` |  | Zoning Description |
+| `struct` | standard | `boolean` |  | Structure On Parcel |
+| `multistruct` | standard | `boolean` |  | Multiple Structures on Parcel |
+| `structno` | standard | `integer` |  | Number of Structures on Parcel |
+| `yearbuilt` | standard | `integer` |  | Structure Year Built |
+| `numstories` | standard | `double precision` |  | Number of Stories |
+| `numunits` | standard | `integer` |  | Number of Units |
+| `structstyle` | standard | `text` |  | Structure Style |
+| `parvaltype` | standard | `text` | Appraised, Assessed, Taxable, Market, Market Value | Parcel Value Type |
+| `improvval` | standard | `double precision` |  | Improvement Value |
+| `landval` | standard | `double precision` |  | Land Value |
+| `parval` | standard | `double precision` |  | Total Parcel Value |
+| `agval` | standard | `double precision` |  | Agricultural Value |
+| `saleprice` | standard | `double precision` |  | Last Sale Price |
+| `saledate` | standard | `date` |  | Last Sale Date |
+| `taxamt` | standard | `double precision` |  | Annual Tax Bill |
+| `owntype` | standard | `text` |  | Owner Type |
+| `owner` | basic | `text` |  | Owner Name |
+| `ownfrst` | basic | `text` |  | Owner First Name |
+| `ownlast` | basic | `text` |  | Owner Last Name |
+| `owner2` | basic | `text` |  | Second Owner Name |
+| `owner3` | basic | `text` |  | Third Owner Name |
+| `owner4` | basic | `text` |  | Fourth Owner Name |
+| `subsurfown` | standard | `text` |  | Subsurface Owner |
+| `subowntype` | standard | `text` |  | Subsurface Owner Type |
+| `mailadd` | standard | `text` |  | Owner Mailing Address |
+| `mail_address2` | standard | `text` |  | Owner Mailing Address Second Line |
+| `careof` | standard | `text` |  | Owner Mailing Address Care Of |
+| `mail_addno` | standard | `text` |  | Owner Mailing Address Street Number |
+| `mail_addpref` | standard | `text` |  | Owner Mailing Address Street Prefix |
+| `mail_addstr` | standard | `text` |  | Owner Mailing Address Street Name |
+| `mail_addsttyp` | standard | `text` |  | Owner Mailing Address Street Type |
+| `mail_addstsuf` | standard | `text` |  | Owner Mailing Address Street Suffix |
+| `mail_unit` | standard | `text` |  | Owner Mailing Address Unit Number |
+| `mail_city` | standard | `text` |  | Owner Mailing Address City |
+| `mail_state2` | standard | `text` |  | Owner Mailing Address State |
+| `mail_zip` | standard | `text` |  | Owner Mailing Address ZIP Code |
+| `mail_urbanization` | standard | `text` |  | Mailing Address Urbanizacion (Puerto Rico) |
+| `address` | basic | `text` |  | Site Address |
+| `address2` | basic | `text` |  | Site Address Second Line |
+| `saddno` | basic | `text` |  | Site Address Number |
+| `saddpref` | basic | `text` |  | Site Address Prefix |
+| `saddstr` | basic | `text` |  | Site Address Street Name |
+| `saddsttyp` | basic | `text` |  | Site Address Street Type |
+| `saddstsuf` | basic | `text` |  | Site Address Street Suffix |
+| `sunit` | basic | `text` |  | Site Address Unit |
+| `scity` | basic | `text` |  | Site Address City |
+| `original_address` | basic | `text` |  | Original Address |
+| `city` | basic | `text` |  | Census City |
+| `county` | basic | `text` |  | Site Address County |
+| `state2` | basic | `text` |  | Site Address State |
+| `szip` | basic | `text` |  | Site Address Zip Code |
+| `urbanization` | basic | `text` |  | Site Urbanizacion |
+| `location_name` | basic | `text` |  | Location Name |
+| `address_source` | basic | `text` |  | Primary Address Source |
+| `legaldesc` | standard | `text` |  | Legal Description |
+| `plat` | standard | `text` |  | Plat |
+| `book` | standard | `text` |  | Book |
+| `page` | standard | `text` |  | Page |
+| `block` | standard | `text` |  | Block |
+| `lot` | standard | `text` |  | Lot |
+| `neighborhood` | standard | `text` |  | Neighborhood |
+| `subdivision` | standard | `text` |  | Subdivision |
+| `qoz` | standard | `text` |  | Federal Qualified Opportunity Zone |
+| `qoz_tract` | standard | `text` |  | Qualified Opportunity Zone 2018 Census Tract Number |
+| `census_tract` | standard | `text` |  | Census 2010 Tract |
+| `census_block` | standard | `text` |  | Census 2010 Block |
+| `census_blockgroup` | standard | `text` |  | Census 2010 Blockgroup |
+| `sourceref` | basic | `text` |  | Source Document Reference |
+| `sourcedate` | basic | `date` |  | Source Document Date |
+| `sourceurl` | basic | `text` |  | Source URL |
+| `recrdareatx` | standard | `text` |  | Recorded Area (text) |
+| `recrdareano` | standard | `double precision` |  | Recorded Area (number) |
+| `gisacre` | standard | `double precision` |  | County-Provided Acres |
+| `sqft` | standard | `double precision` |  | County-Provided Parcel Square Feet |
+| `ll_gisacre` | standard | `double precision` |  | Loveland Calculated Parcel Acres |
+| `ll_gissqft` | standard | `bigint` |  | Loveland Calculated Parcel Square Feet |
+| `ll_bldg_footprint_sqft` | premium | `integer` |  | Loveland Calculated Building Footprint Square Feet |
+| `ll_bldg_count` | premium | `integer` |  | Loveland Calculated Building Count |
+| `reviseddate` | basic | `date` |  | Date of Last Revision |
+| `path` | basic | `text` |  | Parcel Path |
+| `ll_stable_id` | basic | `text` | preserved (if unchanged) | Stable ID |
+| `ll_uuid` | basic | `UUID` |  | Version 4 UUID |
+| `ll_updated_at` | basic | `timestamp with time zone` |  | Updated At |
+| `dpv_status` | premium | `text` |  | USPS Delivery Point Validation |
+| `dpv_codes` | premium | `text` |  | Delivery Point Validation Codes |
+| `dpv_notes` | premium | `text` |  | Delivery Point Validation Notes |
+| `dpv_type` | premium | `text` |  | Delivery Point Match Type |
+| `cass_errorno` | premium | `text` |  | CASS Certification Error Codes |
+| `rdi` | premium | `text` |  | Residential Delivery Indicator |
+| `usps_vacancy` | premium | `text` |  | USPS Vacancy Indicator |
+| `usps_vacancy_date` | premium | `date` |  | USPS Vacancy Indicator Date |
+| `lbcs_activity` | standard | `numeric` |  | LBCS Activity Code |
+| `lbcs_activity_desc` | standard | `text` |  | LBCS Activity Code text description |
+| `lbcs_function` | standard | `numeric` |  | LBCS Function Code |
+| `lbcs_function_desc` | standard | `text` |  | LBCS Function Code text description |
+| `lbcs_structure` | standard | `numeric` |  | LBCS Structure Code |
+| `lbcs_structure_desc` | standard | `text` |  | LBCS Structure Code text description |
+| `lbcs_site` | standard | `numeric` |  | LBCS Site Code |
+| `lbcs_site_desc` | standard | `text` |  | LBCS Site Code text description |
+| `lbcs_ownership` | standard | `numeric` |  | LBCS Ownership Code |
+| `lbcs_ownership_desc` | standard | `text` |  | LBCS Ownership Code text description |
 
 ## To update
 

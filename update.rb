@@ -11,14 +11,14 @@ File.open('schema.sql', 'w') { |file| file.puts sql }
 
 # Update the readme
 docs = []
-docs << '| Field | Type | Examples | Description |'
-docs << '| ----- | ---- | -------- | ----------- |'
+docs << '| Field | Tier | Type | Examples | Description |'
+docs << '| ----- | ---- | ---- | -------- | ----------- |'
 
 schema.map do |s, v|
   puts s
   puts v
   examples = v['examples'].join(', ') if v['examples']
-  docs << "| `#{s}` | `#{v['type']}` | #{examples} | #{v['human']} |"
+  docs << "| `#{s}` | #{v['tier']} | `#{v['type']}` | #{examples} | #{v['human']} |"
 end
 new_readme = "## Schema\n\n"
 new_readme += docs.join("\n")

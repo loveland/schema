@@ -1,16 +1,19 @@
 ogc_fid:
   type: serial primary key
   human: object ID
+  tier: basic
   categories: 
     - core
 geoid:
   type: text
   human: FIPS code
+  tier: basic
   categories: 
     - core
 sourceagent:
   type: text
   human: Source Agent
+  tier: basic
   categories: 
     - core
 parcelnumb:
@@ -19,62 +22,74 @@ parcelnumb:
   examples:
     - "02004940"
     - "001-020-4624-001"
+  tier: basic
   categories: 
     - assessor_data
     - core
 usecode:
   type: text
   human: Parcel Use Code
+  tier: standard
   categories: 
     - assessor_data
 usedesc:
   type: text
   human: Parcel Use Description
+  tier: standard
   categories: 
     - assessor_data
 zoning:
   type: text
   human: Zoning Code
+  tier: standard
   categories: 
     - assessor_data
 zoning_description:
   type: text
   human: Zoning Description
+  tier: standard
   categories: 
     - assessor_data
 struct:
   type: boolean
   human: Structure On Parcel
+  tier: standard
   categories: 
     - assessor_data
 multistruct:
   type: boolean
   human: Multiple Structures on Parcel
+  tier: standard
   categories: 
     - assessor_data
 structno:
   type: integer
   human: Number of Structures on Parcel
+  tier: standard
   categories: 
     - assessor_data
 yearbuilt:
   type: integer
   human: Structure Year Built
+  tier: standard
   categories: 
     - assessor_data
 numstories:
   type: double precision
   human: Number of Stories
+  tier: standard
   categories: 
     - assessor_data
 numunits:
   type: integer
   human: Number of Units
+  tier: standard
   categories: 
     - assessor_data
 structstyle:
   type: text
   human: Structure Style
+  tier: standard
   categories: 
     - assessor_data
 parvaltype:
@@ -88,360 +103,430 @@ parvaltype:
     - 'Taxable'
     - 'Market'
     - 'Market Value'
+  tier: standard
   categories: 
     - assessor_data
 improvval:
   type: double precision
   human: Improvement Value
+  tier: standard
   categories: 
     - assessor_data
 landval:
   type: double precision
   human: Land Value
+  tier: standard
   categories: 
     - assessor_data
 parval:
   type: double precision
   human: Total Parcel Value
+  tier: standard
   categories: 
     - assessor_data
 agval:
   type: double precision
   human: Agricultural Value
+  tier: standard
   categories: 
     - assessor_data
 saleprice:
   type: double precision
   human: Last Sale Price
+  tier: standard
   categories: 
     - assessor_data
 saledate:
   type: date
   human: Last Sale Date
+  tier: standard
   categories: 
     - assessor_data
 taxamt:
   type: double precision
   human: Annual Tax Bill
+  tier: standard
   categories: 
     - assessor_data
 owntype:
   type: text
   human: Owner Type
+  tier: standard
   categories: 
     - assessor_data
 owner:
   type: text
   human: Owner Name
+  tier: basic
   categories: 
     - assessor_data
     - owner_address
 ownfrst:
   type: text
   human: Owner First Name
+  tier: basic
   categories: 
     - assessor_data
     - owner_address
 ownlast:
   type: text
   human: Owner Last Name
+  tier: basic
   categories: 
     - assessor_data
     - owner_address
 owner2:
   type: text
   human: Second Owner Name
+  tier: basic
   categories: 
     - assessor_data
 owner3:
   type: text
   human: Third Owner Name
+  tier: basic
   categories: 
     - assessor_data
 owner4:
   type: text
   human: Fourth Owner Name
+  tier: basic
   categories: 
     - assessor_data
 subsurfown:
   type: text
   human: Subsurface Owner
+  tier: standard
   categories: 
     - assessor_data
 subowntype:
   type: text
   human: Subsurface Owner Type
+  tier: standard
   categories: 
     - assessor_data
 mailadd:
   type: text
   human: Owner Mailing Address
+  tier: standard
   categories: 
     - owner_address
 mail_address2:
   type: text
   human: Owner Mailing Address Second Line
+  tier: standard
   categories: 
     - owner_address
 careof:
   type: text
   human: Owner Mailing Address Care Of
+  tier: standard
   categories: 
     - owner_address
 mail_addno:
   type: text
   human: Owner Mailing Address Street Number
+  tier: standard
   categories: 
     - owner_address
 mail_addpref:
   type: text
   human: Owner Mailing Address Street Prefix
+  tier: standard
   categories: 
     - owner_address
 mail_addstr:
   type: text
   human: Owner Mailing Address Street Name
+  tier: standard
   categories: 
     - owner_address
 mail_addsttyp:
   type: text
   human: Owner Mailing Address Street Type
+  tier: standard
   categories: 
     - owner_address
 mail_addstsuf:
   type: text
   human: Owner Mailing Address Street Suffix
+  tier: standard
   categories: 
     - owner_address
 mail_unit:
   type: text
   human: Owner Mailing Address Unit Number
+  tier: standard
   categories: 
     - owner_address
 mail_city:
   type: text
   human: Owner Mailing Address City
+  tier: standard
   categories: 
     - owner_address
 mail_state2:
   type: text
   human: Owner Mailing Address State
+  tier: standard
   categories: 
     - owner_address
 mail_zip:
   type: text
   human: Owner Mailing Address ZIP Code
+  tier: standard
   categories: 
     - owner_address
 mail_urbanization:
   type: text
   human: Mailing Address Urbanizacion (Puerto Rico)
+  tier: standard
   categories: 
     - owner_address
 address:
   type: text
   human: Site Address
+  tier: basic
   categories: 
     - situs_address
 address2:
   type: text
   human: Site Address Second Line
+  tier: basic
   categories: 
     - situs_address
 saddno:
   type: text
   human: Site Address Number
+  tier: basic
   categories: 
     - situs_address
 saddpref:
   type: text
   human: Site Address Prefix
+  tier: basic
   categories: 
     - situs_address
 saddstr:
   type: text
   human: Site Address Street Name
+  tier: basic
   categories: 
     - situs_address
 saddsttyp:
   type: text
   human: Site Address Street Type
+  tier: basic
   categories: 
     - situs_address
 saddstsuf:
   type: text
   human: Site Address Street Suffix
+  tier: basic
   categories: 
     - situs_address
 sunit:
   type: text
   human: Site Address Unit
+  tier: basic
   categories: 
     - situs_address
 scity:
   type: text
   human: Site Address City
+  tier: basic
   categories: 
     - situs_address
 original_address:
   type: text
   human: Original Address
   description: Address fields as originally provided by the county, separated by a semicolon and a space
+  tier: basic
   categories: 
     - situs_address
 city:
   type: text
   human: Census City
+  tier: basic
   categories: 
     - core
 county:
   type: text
   human: Site Address County
+  tier: basic
   categories: 
     - situs_address
 state2:
   type: text
   human: Site Address State
+  tier: basic
   categories: 
     - situs_address
 szip:
   type: text
   human: Site Address Zip Code
+  tier: basic
   categories: 
     - situs_address
 urbanization:
   type: text
   human: Site Urbanizacion
   description: A postal address field commonly used in Puerto Rico
+  tier: basic
   categories: 
     - situs_address
 location_name:
   type: text
   human: Location Name
   description: A name commonly associated with this parcel
+  tier: basic
   categories: 
     - situs_address
 address_source:
   type: text
   human: Primary Address Source
   default: "'county'"
+  tier: basic
   categories: 
     - situs_address
 legaldesc:
   type: text
   human: Legal Description
+  tier: standard
   categories: 
     - assessor_data
 plat:
   type: text
   human: Plat
+  tier: standard
   categories: 
     - assessor_data
 book:
   type: text
   human: Book
+  tier: standard
   categories: 
     - assessor_data
 page:
   type: text
   human: Page
+  tier: standard
   categories: 
     - assessor_data
 block:
   type: text
   human: Block
+  tier: standard
   categories: 
     - assessor_data
 lot:
   type: text
   human: Lot
+  tier: standard
   categories: 
     - assessor_data
 neighborhood:
   type: text
   human: Neighborhood
+  tier: standard
   categories: 
     - assessor_data
 subdivision:
   type: text
   human: Subdivision
+  tier: standard
   categories: 
     - assessor_data
 qoz:
   type: text
   human: Federal Qualified Opportunity Zone
+  tier: standard
   categories: 
     - assessor_data
 qoz_tract:
   type: text
   human: Qualified Opportunity Zone 2018 Census Tract Number
+  tier: standard
   categories: 
     - assessor_data
 census_tract:
   type: text
   human: Census 2010 Tract
+  tier: standard
   categories: 
     - census
 census_block:
   type: text
   human: Census 2010 Block
+  tier: standard
   categories: 
     - census
 census_blockgroup:
   type: text
   human: Census 2010 Blockgroup
+  tier: standard
   categories: 
     - census
 sourceref:
   type: text
   human: Source Document Reference
+  tier: basic
   categories: 
     - core
 sourcedate:
   type: date
   human: Source Document Date
+  tier: basic
   categories: 
     - core
 sourceurl:
   type: text
   human: Source URL
+  tier: basic
   categories: 
     - core
 recrdareatx:
   type: text
   human: Recorded Area (text)
+  tier: standard
   categories: 
     - assessor_data
 recrdareano:
   type: double precision
   human: Recorded Area (number)
+  tier: standard
   categories: 
     - assessor_data
 gisacre:
   type: double precision
   human: County-Provided Acres
+  tier: standard
   categories: 
     - assessor_data
 sqft:
   type: double precision
   human: County-Provided Parcel Square Feet
+  tier: standard
   categories: 
     - assessor_data
 ll_gisacre:
   type: double precision
   human: Loveland Calculated Parcel Acres
+  tier: standard
   categories: 
     - assessor_data
     - calculated
 ll_gissqft:
   type: bigint
   human: Loveland Calculated Parcel Square Feet
+  tier: standard
   categories: 
     - assessor_data
     - calculated
 ll_bldg_footprint_sqft:
   type: integer
   human: Loveland Calculated Building Footprint Square Feet
+  tier: premium
   categories: 
     - calculated
     - bldg
@@ -449,6 +534,7 @@ ll_bldg_footprint_sqft:
 ll_bldg_count:
   type: integer
   human: Loveland Calculated Building Count
+  tier: premium
   categories: 
     - calculated
     - bldg
@@ -456,18 +542,21 @@ ll_bldg_count:
 reviseddate:
   type: date
   human: Date of Last Revision
+  tier: basic
   categories: 
     - core
 path:
   type: text
   human: Parcel Path
   description: A human-readable identifier for this parcel. Set automatically by Loveland.
+  tier: basic
   categories: 
     - core
 ll_stable_id:
   type: text
   human: Stable ID
   description: Does this parcel have a stable ogc_fid from the last update?
+  tier: basic
   categories: 
     - core
   examples:
@@ -477,6 +566,7 @@ ll_uuid:
   default: uuid_generate_v4()
   human: Version 4 UUID
   description: Uniquely identifies a single parcel
+  tier: basic
   categories: 
     - core
 ll_updated_at:
@@ -484,54 +574,63 @@ ll_updated_at:
   default: now()
   human: Updated At
   description: Timestamp of last update of any kind to this row
+  tier: basic
   categories: 
     - core
 dpv_status:
   type: text
   human: USPS Delivery Point Validation
   description: USPS delivery point validation status code
+  tier: premium
   categories: 
     - usps
     - premium
 dpv_codes:
   type: text
   human: Delivery Point Validation Codes
+  tier: premium
   categories: 
     - usps
     - premium
 dpv_notes:
   type: text
   human: Delivery Point Validation Notes
+  tier: premium
   categories: 
     - usps
     - premium
 dpv_type:
   type: text
   human: Delivery Point Match Type
+  tier: premium
   categories: 
     - usps
     - premium
 cass_errorno:
   type: text
   human: CASS Certification Error Codes
+  tier: premium
   categories: 
     - usps
     - premium
 rdi:
   type: text
   human: Residential Delivery Indicator
+  tier: premium
   categories: 
     - usps
     - premium
 usps_vacancy:
   type: text
   human: USPS Vacancy Indicator
+  tier: premium
   categories: 
     - usps
     - premium
 usps_vacancy_date:
   type: date
   human: USPS Vacancy Indicator Date
+  tier: premium
   categories: 
     - usps
     - premium
@@ -539,59 +638,69 @@ lbcs_activity:
   type: numeric
   human: LBCS Activity Code
   description: Actual activity on land, eg farming, shopping, manufacturing. See https://www.planning.org/lbcs/standards/
+  tier: standard
   categories: 
     - lbcs
 lbcs_activity_desc:
   type: text
   human: LBCS Activity Code text description
   description: Actual activity on land, eg farming, shopping, manufacturing. See https://www.planning.org/lbcs/standards/
+  tier: standard
   categories: 
     - lbcs
 lbcs_function:
   type: numeric
   human: LBCS Function Code
   description: Economic function or type of establishment, eg agricultural, commercial, industrial. See https://www.planning.org/lbcs/standards/
+  tier: standard
   categories: 
     - lbcs
 lbcs_function_desc:
   type: text
   human: LBCS Function Code text description
   description: Economic function or type of establishment, eg agricultural, commercial, industrial. See https://www.planning.org/lbcs/standards/
+  tier: standard
   categories: 
     - lbcs
 lbcs_structure:
   type: numeric
   human: LBCS Structure Code
   description: Type of structure or building, eg single-family house, office building, warehouse. See https://www.planning.org/lbcs/standards/
+  tier: standard
   categories: 
     - lbcs
 lbcs_structure_desc:
   type: text
   human: LBCS Structure Code text description
   description: Type of structure or building, eg single-family house, office building, warehouse. See https://www.planning.org/lbcs/standards/
+  tier: standard
   categories: 
     - lbcs
 lbcs_site:
   type: numeric
   human: LBCS Site Code
   description: What is on the land. See https://www.planning.org/lbcs/standards/
+  tier: standard
   categories: 
     - lbcs
 lbcs_site_desc:
   type: text
   human: LBCS Site Code text description
   description: What is on the land. See https://www.planning.org/lbcs/standards/
+  tier: standard
   categories: 
     - lbcs
 lbcs_ownership:
   type: numeric
   human: LBCS Ownership Code
   description: Ownership structure, eg public, private. See https://www.planning.org/lbcs/standards/
+  tier: standard
   categories: 
     - lbcs
 lbcs_ownership_desc:
   type: text
   human: LBCS Ownership Code text description
   description: Ownership structure, eg public, private. See https://www.planning.org/lbcs/standards/
+  tier: standard
   categories: 
     - lbcs
