@@ -6,8 +6,8 @@ ogc_fid:
     - core
 geoid:
   type: text
-  human: FIPS code
-  description: State + county FIPS codes
+  human: FIPS Code
+  description: FIPS code (state + county FIPS codes)
   tier: basic
   categories: 
     - core
@@ -65,7 +65,7 @@ zoning_description:
     - assessor_data
 struct:
   type: boolean
-  human: Structure On Parcel
+  human: Structure on Parcel
   tier: standard
   categories: 
     - assessor_data
@@ -123,7 +123,7 @@ improvval:
   type: double precision
   human: Improvement Value
   tier: standard
-  categories: 
+  categories:
     - assessor_data
 landval:
   type: double precision
@@ -255,7 +255,7 @@ mail_addpref:
     - owner_address
 mail_addstr:
   type: text
-  human: Owner Mailing Address Street Name
+  human: Mailing Address Street Name
   examples:
     - FOURTH
   tier: standard
@@ -263,7 +263,7 @@ mail_addstr:
     - owner_address
 mail_addsttyp:
   type: text
-  human: Owner Mailing Address Street Type
+  human: Mailing Address Street Type
   examples:
     - AVE
   tier: standard
@@ -271,7 +271,7 @@ mail_addsttyp:
     - owner_address
 mail_addstsuf:
   type: text
-  human: Owner Mailing Address Street Suffix
+  human: Mailing Address Street Suffix
   examples:
     - NW
   tier: standard
@@ -279,7 +279,7 @@ mail_addstsuf:
     - owner_address
 mail_unit:
   type: text
-  human: Owner Mailing Address Unit Number
+  human: Mailing Address Unit Number
   examples: 
     - "APT # 2"
   tier: standard
@@ -287,7 +287,7 @@ mail_unit:
     - owner_address
 mail_city:
   type: text
-  human: Owner Mailing Address City
+  human: Mailing Address City
   examples:
     - Ann Arbor
   tier: standard
@@ -295,7 +295,7 @@ mail_city:
     - owner_address
 mail_state2:
   type: text
-  human: Owner Mailing Address State
+  human: Mailing Address State
   examples:
     - MI
   tier: standard
@@ -303,7 +303,7 @@ mail_state2:
     - owner_address
 mail_zip:
   type: text
-  human: Owner Mailing Address ZIP Code
+  human: Mailing Address ZIP Code
   tier: standard
   categories: 
     - owner_address
@@ -315,8 +315,8 @@ mail_urbanization:
     - owner_address
 address:
   type: text
-  human: Site Address
-  description: This is the address of the parcel itself. Not every parcel has a street address, especially in agricultural areas and other large parcels. Also called the "situs address" or "site address".
+  human: Parcel Address
+  description: This is the address of the parcel itself. Also called the "situs address" or "site address". Not every parcel has a street address, especially in agricultural areas and other large parcels.
   examples:
     - 12109 KATZ RD
   tier: basic
@@ -324,7 +324,7 @@ address:
     - situs_address
 address2:
   type: text
-  human: Site Address Second Line
+  human: Parcel Address Second Line
   examples: 
     - Apt 2
     - Unit B
@@ -334,7 +334,7 @@ address2:
     - situs_address
 saddno:
   type: text
-  human: Site Address Number
+  human: Parcel Address Number
   examples:
     - "12109"
   tier: basic
@@ -342,7 +342,7 @@ saddno:
     - situs_address
 saddpref:
   type: text
-  human: Site Address Prefix
+  human: Parcel Address Prefix
   examples:
     - N
   tier: basic
@@ -350,7 +350,7 @@ saddpref:
     - situs_address
 saddstr:
   type: text
-  human: Site Address Street Name
+  human: Parcel Address Street Name
   examples:
     - GLENN
   tier: basic
@@ -358,7 +358,7 @@ saddstr:
     - situs_address
 saddsttyp:
   type: text
-  human: Site Address Street Type
+  human: Parcel Address Street Type
   examples:
     - RD
   tier: basic
@@ -366,7 +366,7 @@ saddsttyp:
     - situs_address
 saddstsuf:
   type: text
-  human: Site Address Street Suffix
+  human: Parcel Address Street Suffix
   examples:
     - NW
   tier: basic
@@ -374,13 +374,13 @@ saddstsuf:
     - situs_address
 sunit:
   type: text
-  human: Site Address Unit
+  human: Parcel Address Unit
   tier: basic
   categories: 
     - situs_address
 scity:
   type: text
-  human: Site Address City
+  human: Parcel Address City
   examples:
     - GRASS LAKE
   tier: basic
@@ -388,7 +388,7 @@ scity:
     - situs_address
 original_address:
   type: text
-  human: Original Address
+  human: Original Parcel Address
   description: Address fields as originally provided by the county, separated by a semicolon and a space
   examples: 
     - 12109 Katz Rd; NW; Ann Arbor; MI; 48105
@@ -397,19 +397,21 @@ original_address:
     - situs_address
 city:
   type: text
-  human: Census City
+  human: US Census County Subdivision
+  description: Used for organizational purposes. Refer to scity for the city associated with the site address.
   tier: basic
+  link: https://www2.census.gov/geo/pdfs/reference/GARM/Ch8GARM.pdf
   categories: 
     - core
 county:
   type: text
-  human: Site Address County
+  human: Parcel Address County
   tier: basic
   categories: 
     - situs_address
 state2:
   type: text
-  human: Site Address State
+  human: Parcel Address State
   examples:
     - MI
   tier: basic
@@ -417,7 +419,7 @@ state2:
     - situs_address
 szip:
   type: text
-  human: Site Address Zip Code
+  human: Parcel Address Zip Code
   examples: 
     - "48103"
     - 48104-3423
@@ -426,7 +428,7 @@ szip:
     - situs_address
 urbanization:
   type: text
-  human: Site Urbanizacion
+  human: Parcel Urbanizacion
   description: A postal address field commonly used in Puerto Rico
   example: Caguas
   tier: basic
@@ -442,8 +444,13 @@ location_name:
 address_source:
   type: text
   human: Primary Address Source
+  description: Default source if none is listed is the county.
   default: "'county'"
   tier: basic
+  examples: 
+    -openaddresses
+    -accuzip
+    -county
   categories: 
     - situs_address
 legaldesc:
@@ -592,7 +599,7 @@ sqft:
 ll_gisacre:
   type: double precision
   human: Loveland Calculated Parcel Acres
-  description: Parcel acres as calculated by Loveland from county parcel geometry
+  description: Parcel acres as calculated by Loveland from the parcel geometry
   tier: standard
   categories: 
     - assessor_data
@@ -600,7 +607,7 @@ ll_gisacre:
 ll_gissqft:
   type: bigint
   human: Loveland Calculated Parcel Square Feet
-  description: Parcel square feet as calculated by Loveland from county parcel geometry
+  description: Parcel square feet as calculated by Loveland from the parcel geometry
   tier: standard
   categories: 
     - assessor_data
@@ -633,7 +640,7 @@ reviseddate:
 path:
   type: text
   human: Parcel Path
-  description: A human-readable identifier for this parcel. Set automatically by Loveland.
+  description: Loveland's human-readable identifier for this parcel. Not guaranteed to be stable between updates.
   examples:
     - /us/mi/wayne/detroit/123
     - /us/ny/new-york/manhattan/375553
@@ -656,7 +663,7 @@ ll_uuid:
   type: uuid
   default: uuid_generate_v4()
   human: UUID
-  description: Uniquely identifies a single parcel with a v4 uuid. A stable parcel id across county data refreshes. It is the value that should be used for tracking indiviual parcels.
+  description: Uniquely identifies a single parcel with a v4 uuid. A stable parcel id across county data refreshes. This field should be used for tracking indiviual parcels.
   examples:
     - 4cc9eda6-883c-4f38-9a07-b44900a64b16
   tier: basic
@@ -750,7 +757,7 @@ lbcs_activity:
     - lbcs
 lbcs_activity_desc:
   type: text
-  human: LBCS Activity Code text description
+  human: LBCS Activity Code Description
   description: Description of the LBCS numeric code 
   link: https://www.planning.org/lbcs/standards/activity
   tier: standard
@@ -766,7 +773,7 @@ lbcs_function:
     - lbcs
 lbcs_function_desc:
   type: text
-  human: LBCS Function Code text description
+  human: LBCS Function Code Description
   description: Economic function or type of establishment, eg agricultural, commercial, industrial
   link: https://www.planning.org/lbcs/standards/function
   tier: standard
@@ -782,7 +789,7 @@ lbcs_structure:
     - lbcs
 lbcs_structure_desc:
   type: text
-  human: LBCS Structure Code text description
+  human: LBCS Structure Code Description
   description: Type of structure or building, eg single-family house, office building, warehouse
   link: https://www.planning.org/lbcs/standards/structure
   tier: standard
@@ -798,7 +805,7 @@ lbcs_site:
     - lbcs
 lbcs_site_desc:
   type: text
-  human: LBCS Site Code text description
+  human: LBCS Site Code Description
   description: What is on the land
   link: https://www.planning.org/lbcs/standards/site
   tier: standard
@@ -814,7 +821,7 @@ lbcs_ownership:
     - lbcs
 lbcs_ownership_desc:
   type: text
-  human: LBCS Ownership Code text description
+  human: LBCS Ownership Code Description
   description: Ownership structure, eg public, private
   link: https://www.planning.org/lbcs/standards/ownership
   tier: standard
