@@ -633,16 +633,16 @@ ll_bldg_count:
 cdl_raw:
   type: text
   human: All the Cropland Data Layer raw values
-  description: This is an array of [class,percentage] pairs that represent the pixel classes present in the parcel and the their percentage of the total pixels.
+  description: This is an array of [value,percentage] pairs that represent the pixel classes present in the parcel and the their percentage of the total pixels.
   tier: premium
   categories: 
     - calculated
     - cdl
     - premium
-cdl_majority_value:
+cdl_majority_category:
   type: text
-  human: Cropland Data Layer Majority Value
-  description: This is the human readable value for the land cover type that is most common on parcel.
+  human: Cropland Data Layer Majority Category
+  description: This is the human readable Category name for the land cover type that is most common on the parcel.
   tier: premium
   categories: 
     - calculated
@@ -651,7 +651,7 @@ cdl_majority_value:
 cdl_majority_percent:
   type: double precision
   human: Cropland Data Layer Majority Percentage
-  description: This is the actual percentage of pixels for the majority value.
+  description: This is the actual percentage of pixels for the majority category.
   tier: premium
   categories: 
     - calculated
