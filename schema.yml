@@ -307,6 +307,12 @@ mail_zip:
   tier: standard
   categories: 
     - owner_address
+mail_country:
+  type: text
+  human: Mailing Address County Code
+  tier: standard
+  categories: 
+    - owner_address
 mail_urbanization:
   type: text
   human: Mailing Address Urbanizacion (Puerto Rico)
