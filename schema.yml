@@ -295,7 +295,7 @@ mail_city:
     - owner_address
 mail_state2:
   type: text
-  human: Mailing Address State
+  human: Mailing Address State 2-Letter abbreviation
   examples:
     - MI
   tier: standard
@@ -309,7 +309,11 @@ mail_zip:
     - owner_address
 mail_country:
   type: text
-  human: Mailing Address County Code
+  human: Mailing Address ISO 2-Letter County Code
+  examples:
+    - US
+    - CH
+    - DE
   tier: standard
   categories: 
     - owner_address
