@@ -310,7 +310,7 @@ mail_zip:
     - owner_address
 mail_country:
   type: text
-  human: Mailing Address County
+  human: Mailing Address Country
   examples:
     - US
     - Bolivia
