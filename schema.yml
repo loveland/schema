@@ -296,6 +296,7 @@ mail_city:
 mail_state2:
   type: text
   human: Mailing Address State
+  description: Mailing Address State 2-Letter abbreviation
   examples:
     - MI
   tier: standard
@@ -304,6 +305,16 @@ mail_state2:
 mail_zip:
   type: text
   human: Mailing Address ZIP Code
+  tier: standard
+  categories: 
+    - owner_address
+mail_country:
+  type: text
+  human: Mailing Address Country
+  examples:
+    - US
+    - Bolivia
+    - Canada
   tier: standard
   categories: 
     - owner_address
@@ -522,7 +533,7 @@ qoz:
     - assessor_data
 qoz_tract:
   type: text
-  human: Qualified Opportunity Zone 2018 Census Tract Number
+  human: Qualified Opportunity Zone Tract Number
   description: "Census tract number as it was defined in Dec 2018 when QOZs were designated."
   link: https://www.irs.gov/newsroom/opportunity-zones-frequently-asked-questions
   examples:
@@ -630,6 +641,50 @@ ll_bldg_count:
     - calculated
     - bldg
     - premium
+cdl_raw:
+  type: text
+  human: Cropland Data Layer Raw Values
+  description: This is an array of [value,percentage] pairs that represent the pixel classes present in the parcel and the their percentage of the total pixels.
+  tier: premium
+  examples:
+    - [["36","60.0"],["75","20.0"],["87","10.0"],["190","10.0"]]
+  categories: 
+    - calculated
+    - cdl
+    - premium
+cdl_majority_category:
+  type: text
+  human: Cropland Data Layer Majority Category
+  description: This is the human readable Category name for the land cover type that is most common on the parcel.
+  tier: premium
+  examples:
+    - Alfalfa
+  categories: 
+    - calculated
+    - cdl
+    - premium
+cdl_majority_percent:
+  type: double precision
+  human: Cropland Data Layer Majority Percent
+  description: This is the actual percentage of pixels for the majority category.
+  tier: premium
+  examples:
+    - "60.0"
+  categories: 
+    - calculated
+    - cdl
+    - premium
+cdl_date:
+  type: text
+  human: Cropland Data Layer Date
+  description: The year of the Cropland Data Layer data set the current attributes are derived from.
+  tier: premium
+  examples:
+    - "2021"
+  categories: 
+    - calculated
+    - cdl
+    - premium
 reviseddate:
   type: date
   human: Date of Last Revision
@@ -649,7 +704,7 @@ path:
     - core
 ll_stable_id:
   type: text
-  human: Stable ID
+  human: Stable ID Status
   description: Indicates if the path and ll_uuid values have changed during the last refresh from the county. A value of 'preserved' means the 'll_uuid' was matched during county refresh to the previous data. A 'null' indicates a new ll_uuid was generated because the new data was not matched to the existing data during the county data refresh process.
   examples:
     - preserved
@@ -715,7 +770,7 @@ dpv_type:
     - premium
 cass_errorno:
   type: text
-  human: CASS Certification Error Codes
+  human: CASS Error Codes
   tier: premium
   categories: 
     - usps
