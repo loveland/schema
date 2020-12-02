@@ -2,6 +2,36 @@
 
 Version 4.0
 
+## To update
+
+Make changes to the `schema.yml` file and commit them. 
+Open a pull request and go through review, merge the changes 
+
+## To deploy changes
+
+### Subrepos
+* `wdwot`
+* `tierra`
+* `parcel-utils`
+* `parcel-exporters`
+
+Detailed instructions TK
+
+### Coverage report
+
+You will need to add any new columns to the `coverage`: 
+
+```
+alter table coverage 
+add column mail_country_pct integer, 
+add column cdl_raw_pct integer, 
+add column cdl_majority_category_pct integer, 
+add column cdl_majority_percent_pct integer, 
+add column cdl_date_pct integer
+;
+```
+
+
 ## Schema
 
 | Field | Tier | Type | Examples | Description |
@@ -115,8 +145,3 @@ Version 4.0
 | `lbcs_site_desc` | standard | `text` |  | LBCS Site Code text description |
 | `lbcs_ownership` | standard | `numeric` |  | LBCS Ownership Code |
 | `lbcs_ownership_desc` | standard | `text` |  | LBCS Ownership Code text description |
-
-## To update
-
-Make changes to the `schema.yml` file. Then run `ruby update.rb` to
-automatically update the sql and readme.
