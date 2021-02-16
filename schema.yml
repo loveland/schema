@@ -459,9 +459,9 @@ address_source:
   default: "'county'"
   tier: basic
   examples: 
-    -openaddresses
-    -accuzip
-    -county
+    - openaddresses
+    - accuzip
+    - county
   categories: 
     - situs_address
 legaldesc:
