@@ -807,78 +807,88 @@ lbcs_activity:
   human: LBCS Activity Code
   description: Actual activity on land, eg farming, shopping, manufacturing. 
   link: https://www.planning.org/lbcs/standards/activity
-  tier: standard
+  tier: premium
   categories: 
     - lbcs
+    - premium
 lbcs_activity_desc:
   type: text
   human: LBCS Activity Code Description
   description: Description of the LBCS numeric code 
   link: https://www.planning.org/lbcs/standards/activity
-  tier: standard
+  tier: premium
   categories: 
     - lbcs
+    - premium
 lbcs_function:
   type: numeric
   human: LBCS Function Code
   description: Economic function or type of establishment, eg agricultural, commercial, industrial
   link: https://www.planning.org/lbcs/standards/function
-  tier: standard
+  tier: premium
   categories: 
     - lbcs
+    - premium
 lbcs_function_desc:
   type: text
   human: LBCS Function Code Description
   description: Economic function or type of establishment, eg agricultural, commercial, industrial
   link: https://www.planning.org/lbcs/standards/function
-  tier: standard
+  tier: premium
   categories: 
     - lbcs
+    - premium
 lbcs_structure:
   type: numeric
   human: LBCS Structure Code
   description: Type of structure or building, eg single-family house, office building, warehouse
   link: https://www.planning.org/lbcs/standards/structure
-  tier: standard
+  tier: premium
   categories: 
     - lbcs
+    - premium
 lbcs_structure_desc:
   type: text
   human: LBCS Structure Code Description
   description: Type of structure or building, eg single-family house, office building, warehouse
   link: https://www.planning.org/lbcs/standards/structure
-  tier: standard
+  tier: premium
   categories: 
     - lbcs
+    - premium
 lbcs_site:
   type: numeric
   human: LBCS Site Code
   description: What is on the land
   link: https://www.planning.org/lbcs/standards/site
-  tier: standard
+  tier: premium
   categories: 
     - lbcs
+    - premium
 lbcs_site_desc:
   type: text
   human: LBCS Site Code Description
   description: What is on the land
   link: https://www.planning.org/lbcs/standards/site
-  tier: standard
+  tier: premium
   categories: 
     - lbcs
+    - premium
 lbcs_ownership:
   type: numeric
   human: LBCS Ownership Code
   description: Ownership structure, eg public, private
   link: https://www.planning.org/lbcs/standards/ownership
-  tier: standard
+  tier: premium
   categories: 
     - lbcs
+    - premium
 lbcs_ownership_desc:
   type: text
   human: LBCS Ownership Code Description
   description: Ownership structure, eg public, private
   link: https://www.planning.org/lbcs/standards/ownership
-  tier: standard
+  tier: premium
   categories: 
     - lbcs
+    - premium
