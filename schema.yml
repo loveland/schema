@@ -804,90 +804,90 @@ usps_vacancy_date:
     - premium
 lbcs_activity:
   type: numeric
-  human: Land Use Activity Code
+  human: "Land Use Code: Activity"
   description: Actual activity on land, eg farming, shopping, manufacturing. 
-  link: https://www.planning.org/lbcs/standards/activity
+  link: https://landgrid.com/pages/land-use-codes
   tier: premium
   categories: 
     - lbcs
     - premium
 lbcs_activity_desc:
   type: text
-  human: Land Use Activity Code Description
+  human: "Land Use Code Description: Activity"
   description: Description of the LBCS numeric code 
-  link: https://www.planning.org/lbcs/standards/activity
+  link: https://landgrid.com/pages/land-use-codes
   tier: premium
   categories: 
     - lbcs
     - premium
 lbcs_function:
   type: numeric
-  human: Land Use Function Code
+  human: "Land Use Code: Function"
   description: Economic function or type of establishment, eg agricultural, commercial, industrial
-  link: https://www.planning.org/lbcs/standards/function
+  link: https://landgrid.com/pages/land-use-codes
   tier: premium
   categories: 
     - lbcs
     - premium
 lbcs_function_desc:
   type: text
-  human: Land Use Function Code Description
+  human: "Land Use Code Description: Function"
   description: Economic function or type of establishment, eg agricultural, commercial, industrial
-  link: https://www.planning.org/lbcs/standards/function
+  link: https://landgrid.com/pages/land-use-codes
   tier: premium
   categories: 
     - lbcs
     - premium
 lbcs_structure:
   type: numeric
-  human: Land Use Structure Code
+  human: "Land Use Code: Structure"
   description: Type of structure or building, eg single-family house, office building, warehouse
-  link: https://www.planning.org/lbcs/standards/structure
+  link: https://landgrid.com/pages/land-use-codes
   tier: premium
   categories: 
     - lbcs
     - premium
 lbcs_structure_desc:
   type: text
-  human: Land Use Structure Code Description
+  human: "Land Use Code Description: Structure"
   description: Type of structure or building, eg single-family house, office building, warehouse
-  link: https://www.planning.org/lbcs/standards/structure
+  link: https://landgrid.com/pages/land-use-codes
   tier: premium
   categories: 
     - lbcs
     - premium
 lbcs_site:
   type: numeric
-  human: Land Use Site Code
+  human: "Land Use Code: Site"
   description: What is on the land
-  link: https://www.planning.org/lbcs/standards/site
+  link: https://landgrid.com/pages/land-use-codes
   tier: premium
   categories: 
     - lbcs
     - premium
 lbcs_site_desc:
   type: text
-  human: Land Use Site Code Description
+  human: "Land Use Code Description: Site"
   description: What is on the land
-  link: https://www.planning.org/lbcs/standards/site
+  link: https://landgrid.com/pages/land-use-codes
   tier: premium
   categories: 
     - lbcs
     - premium
 lbcs_ownership:
   type: numeric
-  human: Land Use Ownership Code
+  human: "Land Use Code: Ownership"
   description: Ownership structure, eg public, private
-  link: https://www.planning.org/lbcs/standards/ownership
+  link: https://landgrid.com/pages/land-use-codes
   tier: premium
   categories: 
     - lbcs
     - premium
 lbcs_ownership_desc:
   type: text
-  human: Land Use Ownership Code Description
+  human: "Land Use Code Description: Ownership"
   description: Ownership structure, eg public, private
-  link: https://www.planning.org/lbcs/standards/ownership
+  link: https://landgrid.com/pages/land-use-codes
   tier: premium
   categories: 
     - lbcs
