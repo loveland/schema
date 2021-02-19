@@ -736,7 +736,7 @@ ll_updated_at:
     - core
 dpv_status:
   type: text
-  human: USPS Delivery Point Validation
+  human: Delivery Point Validation
   examples:
     - V
     - N
@@ -787,7 +787,7 @@ rdi:
     - premium
 usps_vacancy:
   type: text
-  human: USPS Vacancy Indicator
+  human: Vacancy Indicator
   examples: 
     - Y
   tier: premium
@@ -796,7 +796,7 @@ usps_vacancy:
     - premium
 usps_vacancy_date:
   type: date
-  human: USPS Vacancy Indicator Date
+  human: Vacancy Indicator Date
   description: Date the vacancy indicator was collected
   tier: premium
   categories: 
