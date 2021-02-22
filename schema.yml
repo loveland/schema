@@ -29,7 +29,7 @@ parcelnumb:
     - core
 usecode:
   type: text
-  human: County Parcel Use Code
+  human: Parcel Use Code
   description: Varies by governing municipality
   examples: 
     - 104
@@ -38,7 +38,7 @@ usecode:
     - assessor_data
 usedesc:
   type: text
-  human: County Parcel Use Description
+  human: Parcel Use Description
   description: Varies by governing municipality
   examples: 
     - Residential
@@ -47,7 +47,7 @@ usedesc:
     - assessor_data
 zoning:
   type: text
-  human: County Zoning Code
+  human: Zoning Code
   description: Varies by governing municipality
   examples: 
     - R-1
@@ -56,7 +56,7 @@ zoning:
     - assessor_data
 zoning_description:
   type: text
-  human: County Zoning Description
+  human: Zoning Description
   description: Varies by governing municipality
   examples: 
     - Residential
