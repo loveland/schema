@@ -883,7 +883,7 @@ lbcs_activity:
   type: numeric
   human: "Land Use Code: Activity"
   description: Actual activity on land, eg farming, shopping, manufacturing. 
-  link: https://landgrid.com/pages/land-use-codes
+  link: https://support.landgrid.com/articles/lbcs-keys/
   tier: premium
   categories: 
     - lbcs
@@ -892,7 +892,7 @@ lbcs_activity_desc:
   type: text
   human: "Land Use Code Description: Activity"
   description: Description of the LBCS numeric code 
-  link: https://landgrid.com/pages/land-use-codes
+  link: https://support.landgrid.com/articles/lbcs-keys/
   tier: premium
   categories: 
     - lbcs
@@ -901,7 +901,7 @@ lbcs_function:
   type: numeric
   human: "Land Use Code: Function"
   description: Economic function or type of establishment, eg agricultural, commercial, industrial
-  link: https://landgrid.com/pages/land-use-codes
+  link: https://support.landgrid.com/articles/lbcs-keys/
   tier: premium
   categories: 
     - lbcs
@@ -910,7 +910,7 @@ lbcs_function_desc:
   type: text
   human: "Land Use Code Description: Function"
   description: Economic function or type of establishment, eg agricultural, commercial, industrial
-  link: https://landgrid.com/pages/land-use-codes
+  link: https://support.landgrid.com/articles/lbcs-keys/
   tier: premium
   categories: 
     - lbcs
@@ -919,7 +919,7 @@ lbcs_structure:
   type: numeric
   human: "Land Use Code: Structure"
   description: Type of structure or building, eg single-family house, office building, warehouse
-  link: https://landgrid.com/pages/land-use-codes
+  link: https://support.landgrid.com/articles/lbcs-keys/
   tier: premium
   categories: 
     - lbcs
@@ -928,7 +928,7 @@ lbcs_structure_desc:
   type: text
   human: "Land Use Code Description: Structure"
   description: Type of structure or building, eg single-family house, office building, warehouse
-  link: https://landgrid.com/pages/land-use-codes
+  link: https://support.landgrid.com/articles/lbcs-keys/
   tier: premium
   categories: 
     - lbcs
@@ -937,7 +937,7 @@ lbcs_site:
   type: numeric
   human: "Land Use Code: Site"
   description: What is on the land
-  link: https://landgrid.com/pages/land-use-codes
+  link: https://support.landgrid.com/articles/lbcs-keys/
   tier: premium
   categories: 
     - lbcs
@@ -946,7 +946,7 @@ lbcs_site_desc:
   type: text
   human: "Land Use Code Description: Site"
   description: What is on the land
-  link: https://landgrid.com/pages/land-use-codes
+  link: https://support.landgrid.com/articles/lbcs-keys/
   tier: premium
   categories: 
     - lbcs
@@ -955,7 +955,7 @@ lbcs_ownership:
   type: numeric
   human: "Land Use Code: Ownership"
   description: Ownership structure, eg public, private
-  link: https://landgrid.com/pages/land-use-codes
+  link: https://support.landgrid.com/articles/lbcs-keys/
   tier: premium
   categories: 
     - lbcs
@@ -964,7 +964,7 @@ lbcs_ownership_desc:
   type: text
   human: "Land Use Code Description: Ownership"
   description: Ownership structure, eg public, private
-  link: https://landgrid.com/pages/land-use-codes
+  link: https://support.landgrid.com/articles/lbcs-keys/
   tier: premium
   categories: 
     - lbcs
