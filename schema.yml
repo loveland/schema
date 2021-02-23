@@ -25,6 +25,7 @@ parcelnumb:
     - "001-020-4624-001"
   tier: basic
   categories: 
+    - basic
     - assessor_data
     - core
 usecode:
@@ -35,6 +36,7 @@ usecode:
     - 104
   tier: standard
   categories: 
+    - standard
     - assessor_data
 usedesc:
   type: text
@@ -44,6 +46,7 @@ usedesc:
     - Residential
   tier: standard
   categories: 
+    - standard
     - assessor_data
 zoning:
   type: text
@@ -53,6 +56,7 @@ zoning:
     - R-1
   tier: standard
   categories: 
+    - standard
     - assessor_data
 zoning_description:
   type: text
@@ -62,48 +66,56 @@ zoning_description:
     - Residential
   tier: standard
   categories: 
+    - standard
     - assessor_data
 struct:
   type: boolean
   human: Structure on Parcel
   tier: standard
   categories: 
+    - standard
     - assessor_data
 multistruct:
   type: boolean
   human: Multiple Structures on Parcel
   tier: standard
   categories: 
+    - standard
     - assessor_data
 structno:
   type: integer
   human: Number of Structures on Parcel
   tier: standard
   categories: 
+    - standard
     - assessor_data
 yearbuilt:
   type: integer
   human: Structure Year Built
   tier: standard
   categories: 
+    - standard
     - assessor_data
 numstories:
   type: double precision
   human: Number of Stories
   tier: standard
   categories: 
+    - standard
     - assessor_data
 numunits:
   type: integer
   human: Number of Units
   tier: standard
   categories: 
+    - standard
     - assessor_data
 structstyle:
   type: text
   human: Structure Style
   tier: standard
   categories: 
+    - standard
     - assessor_data
 parvaltype:
   type: text
@@ -118,60 +130,70 @@ parvaltype:
     - 'Market Value'
   tier: standard
   categories: 
+    - standard
     - assessor_data
 improvval:
   type: double precision
   human: Improvement Value
   tier: standard
   categories:
+    - standard
     - assessor_data
 landval:
   type: double precision
   human: Land Value
   tier: standard
   categories: 
+    - standard
     - assessor_data
 parval:
   type: double precision
   human: Total Parcel Value
   tier: standard
   categories: 
+    - standard
     - assessor_data
 agval:
   type: double precision
   human: Agricultural Value
   tier: standard
   categories: 
+    - standard
     - assessor_data
 saleprice:
   type: double precision
   human: Last Sale Price
   tier: standard
   categories: 
+    - standard
     - assessor_data
 saledate:
   type: date
   human: Last Sale Date
   tier: standard
   categories: 
+    - standard
     - assessor_data
 taxamt:
   type: double precision
   human: Annual Tax Bill
   tier: standard
   categories: 
+    - standard
     - assessor_data
 owntype:
   type: text
   human: Owner Type
   tier: standard
   categories: 
+    - standard
     - assessor_data
 owner:
   type: text
   human: Owner Name
   tier: basic
   categories: 
+    - basic
     - assessor_data
     - owner_address
 ownfrst:
@@ -179,6 +201,7 @@ ownfrst:
   human: Owner First Name
   tier: basic
   categories: 
+    - basic
     - assessor_data
     - owner_address
 ownlast:
@@ -186,6 +209,7 @@ ownlast:
   human: Owner Last Name
   tier: basic
   categories: 
+    - basic
     - assessor_data
     - owner_address
 owner2:
@@ -193,30 +217,35 @@ owner2:
   human: Second Owner Name
   tier: basic
   categories: 
+    - basic
     - assessor_data
 owner3:
   type: text
   human: Third Owner Name
   tier: basic
   categories: 
+    - basic
     - assessor_data
 owner4:
   type: text
   human: Fourth Owner Name
   tier: basic
   categories: 
+    - basic
     - assessor_data
 subsurfown:
   type: text
   human: Subsurface Owner
   tier: standard
   categories: 
+    - standard
     - assessor_data
 subowntype:
   type: text
   human: Subsurface Owner Type
   tier: standard
   categories: 
+    - standard
     - assessor_data
 mailadd:
   type: text
@@ -224,18 +253,21 @@ mailadd:
   description: This is the address where the tax and other assessor's communications are sent. It is often thought of as the owner's mailing address. It is often the same address as the parcel phyiscal street address, but very commonly it is a different address than the parcel address itself. 
   tier: standard
   categories: 
+    - standard
     - owner_address
 mail_address2:
   type: text
   human: Mailing Address Second Line
   tier: standard
   categories: 
+    - standard
     - owner_address
 careof:
   type: text
   human: Mailing Address Care Of
   tier: standard
   categories: 
+    - standard
     - owner_address
 mail_addno:
   type: text
@@ -244,14 +276,16 @@ mail_addno:
     - "402"
   tier: standard
   categories: 
+    - standard
     - owner_address
 mail_addpref:
   type: text
   human: Mailing Address Street Prefix
-  tier: standard
   examples:
     - S
+  tier: standard
   categories: 
+    - standard
     - owner_address
 mail_addstr:
   type: text
@@ -260,6 +294,7 @@ mail_addstr:
     - FOURTH
   tier: standard
   categories: 
+    - standard
     - owner_address
 mail_addsttyp:
   type: text
@@ -268,6 +303,7 @@ mail_addsttyp:
     - AVE
   tier: standard
   categories: 
+    - standard
     - owner_address
 mail_addstsuf:
   type: text
@@ -276,6 +312,7 @@ mail_addstsuf:
     - NW
   tier: standard
   categories: 
+    - standard
     - owner_address
 mail_unit:
   type: text
@@ -284,6 +321,7 @@ mail_unit:
     - "APT # 2"
   tier: standard
   categories: 
+    - standard
     - owner_address
 mail_city:
   type: text
@@ -292,6 +330,7 @@ mail_city:
     - Ann Arbor
   tier: standard
   categories: 
+    - standard
     - owner_address
 mail_state2:
   type: text
@@ -301,12 +340,14 @@ mail_state2:
     - MI
   tier: standard
   categories: 
+    - standard
     - owner_address
 mail_zip:
   type: text
   human: Mailing Address ZIP Code
   tier: standard
   categories: 
+    - standard
     - owner_address
 mail_country:
   type: text
@@ -317,12 +358,14 @@ mail_country:
     - Canada
   tier: standard
   categories: 
+    - standard
     - owner_address
 mail_urbanization:
   type: text
   human: Mailing Address Urbanizacion (Puerto Rico)
   tier: standard
   categories: 
+    - standard
     - owner_address
 address:
   type: text
@@ -332,6 +375,7 @@ address:
     - 12109 KATZ RD
   tier: basic
   categories: 
+    - basic
     - situs_address
 address2:
   type: text
@@ -342,6 +386,7 @@ address2:
     - 6th floor
   tier: basic
   categories: 
+    - basic
     - situs_address
 saddno:
   type: text
@@ -350,6 +395,7 @@ saddno:
     - "12109"
   tier: basic
   categories: 
+    - basic
     - situs_address
 saddpref:
   type: text
@@ -358,6 +404,7 @@ saddpref:
     - N
   tier: basic
   categories: 
+    - basic
     - situs_address
 saddstr:
   type: text
@@ -366,6 +413,7 @@ saddstr:
     - GLENN
   tier: basic
   categories: 
+    - basic
     - situs_address
 saddsttyp:
   type: text
@@ -374,6 +422,7 @@ saddsttyp:
     - RD
   tier: basic
   categories: 
+    - basic
     - situs_address
 saddstsuf:
   type: text
@@ -382,12 +431,14 @@ saddstsuf:
     - NW
   tier: basic
   categories: 
+    - basic
     - situs_address
 sunit:
   type: text
   human: Parcel Address Unit
   tier: basic
   categories: 
+    - basic
     - situs_address
 scity:
   type: text
@@ -396,6 +447,7 @@ scity:
     - GRASS LAKE
   tier: basic
   categories: 
+    - basic
     - situs_address
 original_address:
   type: text
@@ -405,13 +457,14 @@ original_address:
     - 12109 Katz Rd; NW; Ann Arbor; MI; 48105
   tier: basic
   categories: 
+    - basic
     - situs_address
 city:
   type: text
   human: US Census County Subdivision
   description: Used for organizational purposes. Refer to scity for the city associated with the site address.
-  tier: basic
   link: https://www2.census.gov/geo/pdfs/reference/GARM/Ch8GARM.pdf
+  tier: basic
   categories: 
     - core
 county:
@@ -419,6 +472,7 @@ county:
   human: Parcel Address County
   tier: basic
   categories: 
+    - basic
     - situs_address
 state2:
   type: text
@@ -427,6 +481,7 @@ state2:
     - MI
   tier: basic
   categories: 
+    - basic
     - situs_address
 szip:
   type: text
@@ -436,6 +491,7 @@ szip:
     - 48104-3423
   tier: basic
   categories: 
+    - basic
     - situs_address
 urbanization:
   type: text
@@ -444,6 +500,7 @@ urbanization:
   example: Caguas
   tier: basic
   categories: 
+    - basic
     - situs_address
 location_name:
   type: text
@@ -451,6 +508,7 @@ location_name:
   description: A name commonly associated with this parcel
   tier: basic
   categories: 
+    - basic
     - situs_address
 address_source:
   type: text
@@ -463,12 +521,14 @@ address_source:
     - accuzip
     - county
   categories: 
+    - basic
     - situs_address
 legaldesc:
   type: text
   human: Legal Description
   tier: standard
   categories: 
+    - standard
     - assessor_data
 plat:
   type: text
@@ -478,6 +538,7 @@ plat:
     - A
   tier: standard
   categories: 
+    - standard
     - assessor_data
 book:
   type: text
@@ -487,6 +548,7 @@ book:
     - 231
   tier: standard
   categories: 
+    - standard
     - assessor_data
 page:
   type: text
@@ -496,30 +558,35 @@ page:
     - 2
   tier: standard
   categories: 
+    - standard
     - assessor_data
 block:
   type: text
   human: Block
   tier: standard
   categories: 
+    - standard
     - assessor_data
 lot:
   type: text
   human: Lot
   tier: standard
   categories: 
+    - standard
     - assessor_data
 neighborhood:
   type: text
   human: Neighborhood
   tier: standard
   categories: 
+    - standard
     - assessor_data
 subdivision:
   type: text
   human: Subdivision
   tier: standard
   categories: 
+    - standard
     - assessor_data
 qoz:
   type: text
@@ -530,6 +597,7 @@ qoz:
     - "No"
   tier: standard
   categories: 
+    - standard
     - assessor_data
 qoz_tract:
   type: text
@@ -541,6 +609,7 @@ qoz_tract:
     - 30107000100
   tier: standard
   categories: 
+    - standard
     - assessor_data
 census_tract:
   type: text
@@ -553,12 +622,14 @@ census_block:
   human: Census 2010 Block
   tier: standard
   categories: 
+    - standard
     - census
 census_blockgroup:
   type: text
   human: Census 2010 Blockgroup
   tier: standard
   categories: 
+    - standard
     - census
 sourceref:
   type: text
@@ -587,6 +658,7 @@ recrdareatx:
   deprecated: true
   tier: standard
   categories: 
+    - standard
     - assessor_data
 recrdareano:
   type: double precision
@@ -594,18 +666,21 @@ recrdareano:
   deprecated: true
   tier: standard
   categories: 
+    - standard
     - assessor_data
 gisacre:
   type: double precision
   human: County-Provided Acres
   tier: standard
   categories: 
+    - standard
     - assessor_data
 sqft:
   type: double precision
   human: County-Provided Parcel Square Feet
   tier: standard
   categories: 
+    - standard
     - assessor_data
 ll_gisacre:
   type: double precision
@@ -613,6 +688,7 @@ ll_gisacre:
   description: Parcel acres as calculated by Loveland from the parcel geometry
   tier: standard
   categories: 
+    - standard
     - assessor_data
     - calculated
 ll_gissqft:
@@ -621,6 +697,7 @@ ll_gissqft:
   description: Parcel square feet as calculated by Loveland from the parcel geometry
   tier: standard
   categories: 
+    - standard
     - assessor_data
     - calculated
 ll_bldg_footprint_sqft:
@@ -645,9 +722,9 @@ cdl_raw:
   type: text
   human: Cropland Data Layer Raw Values
   description: This is an array of [value,percentage] pairs that represent the pixel classes present in the parcel and the their percentage of the total pixels.
-  tier: premium
   examples:
     - [["36","60.0"],["75","20.0"],["87","10.0"],["190","10.0"]]
+  tier: premium
   categories: 
     - calculated
     - cdl
@@ -656,9 +733,9 @@ cdl_majority_category:
   type: text
   human: Cropland Data Layer Majority Category
   description: This is the human readable Category name for the land cover type that is most common on the parcel.
-  tier: premium
   examples:
     - Alfalfa
+  tier: premium
   categories: 
     - calculated
     - cdl
@@ -667,9 +744,9 @@ cdl_majority_percent:
   type: double precision
   human: Cropland Data Layer Majority Percent
   description: This is the actual percentage of pixels for the majority category.
-  tier: premium
   examples:
     - "60.0"
+  tier: premium
   categories: 
     - calculated
     - cdl
@@ -678,9 +755,9 @@ cdl_date:
   type: text
   human: Cropland Data Layer Date
   description: The year of the Cropland Data Layer data set the current attributes are derived from.
-  tier: premium
   examples:
     - "2021"
+  tier: premium
   categories: 
     - calculated
     - cdl
