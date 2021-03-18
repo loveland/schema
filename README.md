@@ -102,14 +102,14 @@ Version 4.0
 | `ll_stable_id` | basic | `text` | preserved (if unchanged) | Stable ID Status |
 | `ll_uuid` | basic | `uuid` | 4cc9eda6-883c-4f38-9a07-b44900a64b16 | UUID |
 | `ll_updated_at` | basic | `timestamp with time zone` | 2019-06-06 12:45:21.285102-04 | Updated At |
-| `dpv_status` | premium | `text` | V, N | USPS Delivery Point Validation |
+| `dpv_status` | premium | `text` | V, N | Delivery Point Validation |
 | `dpv_codes` | premium | `text` |  | Delivery Point Validation Codes |
 | `dpv_notes` | premium | `text` |  | Delivery Point Validation Notes |
 | `dpv_type` | premium | `text` | H (High Rise), S (Street) | Delivery Point Match Type |
 | `cass_errorno` | premium | `text` |  | CASS Error Codes |
 | `rdi` | premium | `text` | Y, N | Residential Delivery Indicator |
-| `usps_vacancy` | premium | `text` | Y | USPS Vacancy Indicator |
-| `usps_vacancy_date` | premium | `date` |  | USPS Vacancy Indicator Date |
+| `usps_vacancy` | premium | `text` | Y | Vacancy Indicator |
+| `usps_vacancy_date` | premium | `date` |  | Vacancy Indicator Date |
 | `lbcs_activity` | premium | `numeric` |  | LBCS Activity Code |
 | `lbcs_activity_desc` | premium | `text` |  | LBCS Activity Code Description |
 | `lbcs_function` | premium | `numeric` |  | LBCS Function Code |
