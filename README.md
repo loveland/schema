@@ -99,7 +99,7 @@ Version 4.0
 | `cdl_date` | premium | `text` | 2021 | Cropland Data Layer Date |
 | `reviseddate` | basic | `date` |  | Date of Last Revision |
 | `path` | basic | `text` | /us/mi/wayne/detroit/123, /us/ny/new-york/manhattan/375553 | Parcel Path |
-| `ll_stable_id` | basic | `text` | preserved (if unchanged) | Stable ID Status |
+| `ll_stable_id` | basic | `text` | preserved (if unchanged),  | Stable ID Status |
 | `ll_uuid` | basic | `uuid` | 4cc9eda6-883c-4f38-9a07-b44900a64b16 | UUID |
 | `ll_updated_at` | basic | `timestamp with time zone` | 2019-06-06 12:45:21.285102-04 | Updated At |
 | `dpv_status` | premium | `text` | V, N | USPS Delivery Point Validation |
