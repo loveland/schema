@@ -616,6 +616,7 @@ census_tract:
   human: Census 2010 Tract
   tier: standard
   categories: 
+    - standard
     - census
 census_block:
   type: text

@@ -110,16 +110,16 @@ Version 4.0
 | `rdi` | premium | `text` | Y, N | Residential Delivery Indicator |
 | `usps_vacancy` | premium | `text` | Y | USPS Vacancy Indicator |
 | `usps_vacancy_date` | premium | `date` |  | USPS Vacancy Indicator Date |
-| `lbcs_activity` | premium | `numeric` |  | LBCS Activity Code |
-| `lbcs_activity_desc` | premium | `text` |  | LBCS Activity Code Description |
-| `lbcs_function` | premium | `numeric` |  | LBCS Function Code |
-| `lbcs_function_desc` | premium | `text` |  | LBCS Function Code Description |
-| `lbcs_structure` | premium | `numeric` |  | LBCS Structure Code |
-| `lbcs_structure_desc` | premium | `text` |  | LBCS Structure Code Description |
-| `lbcs_site` | premium | `numeric` |  | LBCS Site Code |
-| `lbcs_site_desc` | premium | `text` |  | LBCS Site Code Description |
-| `lbcs_ownership` | premium | `numeric` |  | LBCS Ownership Code |
-| `lbcs_ownership_desc` | premium | `text` |  | LBCS Ownership Code Description |
+| `lbcs_activity` | premium | `numeric` |  | Land Use Code: Activity |
+| `lbcs_activity_desc` | premium | `text` |  | Land Use Code Description: Activity |
+| `lbcs_function` | premium | `numeric` |  | Land Use Code: Function |
+| `lbcs_function_desc` | premium | `text` |  | Land Use Code Description: Function |
+| `lbcs_structure` | premium | `numeric` |  | Land Use Code: Structure |
+| `lbcs_structure_desc` | premium | `text` |  | Land Use Code Description: Structure |
+| `lbcs_site` | premium | `numeric` |  | Land Use Code: Site |
+| `lbcs_site_desc` | premium | `text` |  | Land Use Code Description: Site |
+| `lbcs_ownership` | premium | `numeric` |  | Land Use Code: Ownership |
+| `lbcs_ownership_desc` | premium | `text` |  | Land Use Code Description: Ownership |
 
 ## To update
 
