@@ -785,13 +785,11 @@ ll_stable_id:
   human: Stable ID Status
   description: Indicates if the path and ll_uuid values have changed during the last refresh from the county. A value of 'preserved' means the 'll_uuid' was matched during county refresh to the previous data. A 'null' indicates a new ll_uuid was generated because the new data was not matched to the existing data during the county data refresh process.
   examples:
-    - preserved
+    - preserved (if unchanged)
     - null
   tier: basic
   categories: 
     - core
-  examples:
-    - preserved (if unchanged)
 ll_uuid:
   type: uuid
   default: uuid_generate_v4()
