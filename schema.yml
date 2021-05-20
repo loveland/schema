@@ -722,7 +722,7 @@ ll_bldg_count:
 cdl_raw:
   type: text
   human: Cropland Data Layer Raw Values
-  description: This is an array of [value,percentage] pairs that represent the pixel classes present in the parcel and the their percentage of the total pixels.
+  description: (Planned to populate Q3 2021) This is an array of [value,percentage] pairs that represent the pixel classes present in the parcel and the their percentage of the total pixels.
   examples:
     - [["36","60.0"],["75","20.0"],["87","10.0"],["190","10.0"]]
   tier: premium
@@ -733,7 +733,7 @@ cdl_raw:
 cdl_majority_category:
   type: text
   human: Cropland Data Layer Majority Category
-  description: This is the human readable Category name for the land cover type that is most common on the parcel.
+  description: (Planned to populate Q3 2021) This is the human readable Category name for the land cover type that is most common on the parcel.
   examples:
     - Alfalfa
   tier: premium
@@ -744,7 +744,7 @@ cdl_majority_category:
 cdl_majority_percent:
   type: double precision
   human: Cropland Data Layer Majority Percent
-  description: This is the actual percentage of pixels for the majority category.
+  description: (Planned to populate Q3 2021) This is the actual percentage of pixels for the majority category.
   examples:
     - "60.0"
   tier: premium
@@ -755,7 +755,7 @@ cdl_majority_percent:
 cdl_date:
   type: text
   human: Cropland Data Layer Date
-  description: The year of the Cropland Data Layer data set the current attributes are derived from.
+  description: (Planned to populate Q3 2021) The year of the Cropland Data Layer data set the current attributes are derived from.
   examples:
     - "2021"
   tier: premium
