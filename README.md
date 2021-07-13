@@ -77,6 +77,9 @@ Version 4.0
 | `lot` | standard | `text` |  | Lot |
 | `neighborhood` | standard | `text` |  | Neighborhood |
 | `subdivision` | standard | `text` |  | Subdivision |
+| `lat` | standard | `text` |  | Latitude |
+| `lon` | standard | `text` |  | Longitude |
+| `taxyear` | standard | `text` |  | Tax Year |
 | `qoz` | standard | `text` | Yes, No | Federal Qualified Opportunity Zone |
 | `qoz_tract` | standard | `text` | 30059000100, 30107000100 | Qualified Opportunity Zone Tract Number |
 | `census_tract` | standard | `text` |  | Census 2010 Tract |
