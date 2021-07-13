@@ -588,6 +588,34 @@ subdivision:
   categories: 
     - standard
     - assessor_data
+
+lat:
+  type: text
+  human: Latitude
+  description: On parcel centroid latitude decimal coordinate
+  tier: standard
+  categories: 
+    - standard
+    - assessor_data
+
+lon:
+  type: text
+  human: Longitude
+  description: On parcel centroid longitude decimal coordinate
+  tier: standard
+  categories: 
+    - standard
+    - assessor_data
+
+taxyear:
+  type: text
+  human: Tax Year
+  description: A county provided attribute indicating the tax year the assessor data applies to.
+  tier: standard
+  categories: 
+    - standard
+    - assessor_data
+
 qoz:
   type: text
   human: Federal Qualified Opportunity Zone
